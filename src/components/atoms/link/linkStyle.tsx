@@ -90,6 +90,7 @@ export const LinkElement = styled.a<ButtonProps>`
   justify-content: ${({ theme }) =>
     justifyItems[theme as keyof typeof justifyItems]};
   width: fit-content;
+  text-align: center;
 
   &:hover {
     color: ${({ theme }) =>

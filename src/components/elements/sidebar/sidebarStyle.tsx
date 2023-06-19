@@ -24,7 +24,7 @@ export const DesktopSidebarContainer = styled(SidebarContainer)<SidebarProps>`
 `;
 
 export const MobileSidebarContainer = styled(SidebarContainer)<SidebarProps>`
-  width: 100%;
+  width: 100vw;
   height: ${({ extendSidebar }) =>
     extendSidebar ? "280px" : "var(--mobileClosedSidebarWidth)"};
   overflow-y: hidden;

@@ -17,46 +17,46 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
   const DevExperience = [
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "areas of dev experience",
+      headerText: "Areas of dev experience",
       contentText:
         "Recommerce, Ecommerce, CRM, Internal tools, Design systems, UX",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "tech company experience",
+      headerText: "Tech company experience",
       contentText:
         "Customer success, Project management, Inbound Marketing, Event planning",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "languages / frameworks",
+      headerText: "Languages / frameworks",
       contentText:
         "JavaScript, TypeScript, React, Vue 2, Vue 3, Vuex, Nextjs, Knockout",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "libraries",
+      headerText: "Libraries",
       contentText: "Apollo GraphQL, Jest, React Testing Library",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "css skills",
+      headerText: "CSS skills",
       contentText: "SCSS, Flexbox, Grid, Styled Components, Bootstrap",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "developer tools",
+      headerText: "Developer tools",
       contentText:
         "Github, Heroku, Storyblok, Storybook, Sentry, Postman, Visual Studio Code",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "product / design tools",
+      headerText: "Product / design tools",
       contentText: "Heap, Jira, Notion, Figma, Heap, Google Optimize",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "favorite extensions",
+      headerText: "Favorite extensions",
       contentText:
         "Lighthouse, A11ygator, Wappalyzer, React DevTools, Apollo DevTools",
     },
