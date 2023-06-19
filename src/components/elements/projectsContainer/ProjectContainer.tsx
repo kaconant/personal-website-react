@@ -17,13 +17,14 @@ import ProductReceiving from "../../../assets/photos/projects/ProductReceiving.p
 
 import { H3, H4 } from "../../textElements";
 import useMediaQuery from "../../../hooks/useMediaQuery";
+import cryptoRandomString from "crypto-random-string";
 
 const ProjectContainer: FC = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const ProjectInformation = [
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Condition Assessment",
       type: "Internal tool / Recommerce",
       devices: "Web - desktop & tablet",
@@ -32,7 +33,7 @@ const ProjectContainer: FC = () => {
       imgSrc: ConditionAssessment,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Reko Design System",
       type: "Design system / UX",
       devices: "Web - desktop, mobile, tablet",
@@ -41,7 +42,7 @@ const ProjectContainer: FC = () => {
       imgSrc: RekoDesignSystem,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Product Receiving",
       type: "Internal tool / Recommerce",
       devices: "Web - desktop & tablet",
@@ -50,7 +51,7 @@ const ProjectContainer: FC = () => {
       imgSrc: ProductReceiving,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Reko Marketing Website",
       type: "Customer Facing / Marketing",
       devices: "Web - desktop & mobile",
@@ -59,7 +60,7 @@ const ProjectContainer: FC = () => {
       imgSrc: RekoMarketing,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Checkout Remodel",
       type: "Customer facing / Recommerce",
       devices: "Web - desktop & mobile",
@@ -68,7 +69,7 @@ const ProjectContainer: FC = () => {
       imgSrc: CheckoutFlow,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Oliver Space Design System",
       type: "Design system / UX",
       devices: "Web - desktop, mobile, tablet",
@@ -77,7 +78,7 @@ const ProjectContainer: FC = () => {
       imgSrc: OliverSpaceDesign,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "Customer Portal",
       type: "Customer facing / CRM",
       devices: "Web - desktop & mobile",
@@ -86,7 +87,7 @@ const ProjectContainer: FC = () => {
       imgSrc: FieldEdge,
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       title: "myBlendology",
       type: "User facing / Personal project",
       devices: "Web - desktop & mobile",

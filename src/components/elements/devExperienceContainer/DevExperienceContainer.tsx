@@ -7,6 +7,8 @@ import {
   SectionHeader,
 } from "./devExperienceStyle";
 
+import cryptoRandomString from "crypto-random-string";
+
 type DevExperienceProps = {
   isMobile: boolean;
 };
@@ -14,46 +16,46 @@ type DevExperienceProps = {
 const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
   const DevExperience = [
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "areas of dev experience",
       contentText:
         "Recommerce, Ecommerce, CRM, Internal tools, Design systems, UX",
     },
     {
-    id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "tech company experience",
       contentText:
         "Customer success, Project management, Inbound Marketing, Event planning",
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "languages / frameworks",
       contentText:
         "JavaScript, TypeScript, React, Vue 2, Vue 3, Vuex, Nextjs, Knockout",
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "libraries",
       contentText: "Apollo GraphQL, Jest, React Testing Library",
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "css skills",
       contentText: "SCSS, Flexbox, Grid, Styled Components, Bootstrap",
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "developer tools",
       contentText:
         "Github, Heroku, Storyblok, Storybook, Sentry, Postman, Visual Studio Code",
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "product / design tools",
       contentText: "Heap, Jira, Notion, Figma, Heap, Google Optimize",
     },
     {
-      id: crypto.randomUUID(),
+      id: cryptoRandomString({ length: 10 }),
       headerText: "favorite extensions",
       contentText:
         "Lighthouse, A11ygator, Wappalyzer, React DevTools, Apollo DevTools",
