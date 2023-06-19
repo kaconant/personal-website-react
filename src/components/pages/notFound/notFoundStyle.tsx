@@ -10,7 +10,6 @@ export const NotFoundContainer = styled.div`
 export const NotFoundImage = styled.img`
   height: 100%;
   max-height: 425px;
-  width: auto;
-  max-width: 425px;
+  width: 100vw;
   border: 3px solid var(--white);
 `;
