@@ -14,7 +14,7 @@ const backgroundColors: ThemeAttribute = {
 };
 
 const textColors: ThemeAttribute = {
-  primary: "var(--midPurple)",
+  primary: "var(--darkPurple)",
   button: "var(--black)",
 };
 
@@ -50,7 +50,7 @@ const padding: ThemeAttribute = {
 
 const border: ThemeAttribute = {
   primary: "unset",
-  button: "3px solid var(--midAqua)",
+  button: "3px solid var(--grayscale4)",
 };
 
 const hoverBorderColors: ThemeAttribute = {
@@ -89,6 +89,7 @@ export const LinkElement = styled.a<ButtonProps>`
   opacity: ${({ theme }) => opacity[theme as keyof typeof opacity]};
   justify-content: ${({ theme }) =>
     justifyItems[theme as keyof typeof justifyItems]};
+  width: fit-content;
 
   &:hover {
     color: ${({ theme }) =>

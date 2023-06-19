@@ -1,39 +1,27 @@
 import { FC } from "react";
 import {
   ContactCard,
-  ContactInfo,
   ContactLinks,
 } from "./contactContainerStyle";
 
 import Link from "../../atoms/link/Link";
 import Resume from "../../../assets/pdf/KrissyConantResume2023.pdf";
+import ImageLink from "../../atoms/imageLink/ImageLink";
 
-type ContactContainerProps = {
-  isMobile: boolean;
-};
+import LinkedIn from "../../../assets/icons/linkedin.svg";
+import GitHub from "../../../assets/icons/github.svg";
+import Email from "../../../assets/icons/email.svg";
 
-const ContactContainer: FC<ContactContainerProps> = ({ isMobile }) => {
+const ContactContainer: FC = () => {
   return (
-    <ContactCard isMobile={isMobile}>
-      <ContactLinks isMobile={isMobile}>
-        <ContactInfo>
-          linkedIn
-          <Link
-            href="https://www.linkedin.com/in/krissy-conant/"
-            linkContent="krissy-conant"
-          />
-        </ContactInfo>
-        <ContactInfo>
-          email
-          <Link
-            href="mailto:krissyconant@gmail.com"
-            linkContent="krissyconant@gmail.com"
-          />
-        </ContactInfo>
-        <ContactInfo>
-          github
-          <Link href="https://github.com/kaconant" linkContent="kaconant" />
-        </ContactInfo>
+    <ContactCard>
+      <ContactLinks>
+        <ImageLink
+          href="https://www.linkedin.com/in/krissy-conant/"
+          imgSrc={LinkedIn}
+        />
+        <ImageLink href="https://github.com/kaconant" imgSrc={GitHub} />
+        <ImageLink href="mailto:krissyconant@gmail.com" imgSrc={Email} />
       </ContactLinks>
 
       <Link href={Resume} theme="button" linkContent="Check out my resume" />

@@ -10,8 +10,8 @@ const SidebarContainer = styled.div<SidebarProps>`
   display: flex;
   position: fixed;
   padding: ${({ isMobile }) => (isMobile ? "24px" : "40px")};
-  background-color: var(--lightBlue);
-  border: 1px solid var(--midAqua);
+  background-color: var(--shell);
+  border: 2px solid var(--grayscale4);
   transition: width 350ms ease, height 350ms ease;
   overflow-x: hidden;
   z-index: var(--topZIndex);
@@ -19,24 +19,27 @@ const SidebarContainer = styled.div<SidebarProps>`
 
 export const DesktopSidebarContainer = styled(SidebarContainer)<SidebarProps>`
   width: ${({ extendSidebar }) =>
-    extendSidebar ? "150px" : "var(--desktopClosedSidebarWidth)"};
+    extendSidebar ? "165px" : "var(--desktopClosedSidebarWidth)"};
   height: 100%;
 `;
 
 export const MobileSidebarContainer = styled(SidebarContainer)<SidebarProps>`
   width: 100%;
   height: ${({ extendSidebar }) =>
-    extendSidebar ? "240px" : "var(--mobileClosedSidebarWidth)"};
+    extendSidebar ? "280px" : "var(--mobileClosedSidebarWidth)"};
   overflow-y: hidden;
 `;
 
 export const SidebarWrapper = styled.div<SidebarProps>`
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
   align-items: ${({ isMobile }) => (isMobile ? "center" : "none")};
 `;
+
+export const SidebarTop = styled.div``;
 
 export const SidebarHeader = styled.div`
   display: flex;
@@ -79,22 +82,22 @@ export const SidebarListItemName = styled(H3)<SidebarProps>`
   }
 `;
 
-// TODO: Min-height issue with footer
+// TODO: 100% vs 100vh height
 export const PageComponent = styled.div<SidebarProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: ${({ isMobile }) =>
     isMobile ? "0" : "var(--desktopClosedSidebarWidth)"};
-  background-color: var(--midBlue);
+  background-color: var(--lightPurple);
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
   padding-top: ${({ isMobile }) =>
     isMobile
       ? "var(--mobilePaddingTopHeight)"
       : "var(--desktopPaddingTopHeight)"};
-  height: 100%;
-  min-height: calc(100vh - 66px);
+  min-height: 100vh;
 `;
 
 export const BackgroundSheet = styled.div`
@@ -109,4 +112,14 @@ export const BackgroundSheet = styled.div`
   border: none;
   pointer-events: auto;
   opacity: 1;
+`;
+
+export const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  bottom: 0px;
+  margin: 0;
 `;

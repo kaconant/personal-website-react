@@ -1,12 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 export const brandColors = {
-  lightBlue: "#B6D9F2",
+  lightBlue: "#cfe7f7",
   midBlue: "#B1C3EF",
   midAqua: "#7DC4D2",
-  lightPink: "#FED6F6",
+  lightPink: "#f9e0f9",
   midPink: "#F2BFD7",
-  midPurple: "#7C73D3",
+  lightPurple: "#ebe5f9",
+  midPurple: "#AA9CD5",
+  darkPurple: "#614051",
   lightOrange: "#FED6C2",
   midOrange: "#F3B48F"
 };
@@ -15,6 +17,8 @@ export const accentColors = {
   outline: "#6F6B85",
   black: "#111827",
   white: "#FFFFFF",
+  sand: "#F4DECB",
+  shell: "#f7f2ef",
   grayscale1: "#F9FAFB",
   grayscale2: "#F3F4F6",
   grayscale3: "#E5E7EB",
@@ -41,13 +45,17 @@ const GlobalStyle = createGlobalStyle`
     --midAqua: ${brandColors.midAqua};
     --lightPink: ${brandColors.lightPink};
     --midPink: ${brandColors.midPink};
+    --lightPurple: ${brandColors.lightPurple};
     --midPurple: ${brandColors.midPurple};
+    --darkPurple: ${brandColors.darkPurple};
     --lightOrange: ${brandColors.lightOrange};
     --midOrange: ${brandColors.midOrange};
 
     --outline: ${accentColors.outline};
     --black: ${accentColors.black};
     --white: ${accentColors.white};
+    --sand: ${accentColors.sand};
+    --shell: ${accentColors.shell};
     --grayscale1: ${accentColors.grayscale1};
     --grayscale2: ${accentColors.grayscale2};
     --grayscale3: ${accentColors.grayscale3};

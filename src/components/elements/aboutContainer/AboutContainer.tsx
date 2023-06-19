@@ -22,11 +22,7 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
     {
       id: crypto.randomUUID(),
       textSection:
-        "After working in client facing positions in onboarding, sales, and marketing for over 10 years, I decided to try my hand at web development professionally in 2018 and never looked back.",
-    },
-    {
-      id: crypto.randomUUID(),
-      textSection: "I love building great user experiences - FILL THIS IN.",
+        "I love building and delivering great user experiences by developing efficient and delightful frontend features for end users and design systems for fellow developers. Additionally, I strive to identify opportunities for reducing churn and increasing revenue.",
     },
     {
       id: crypto.randomUUID(),

@@ -7,7 +7,6 @@ import {
 } from "../components/elements/sidebar/sidebarStyle";
 import DesktopSidebar from "../components/elements/sidebar/DesktopSidebar";
 import MobileSidebar from "../components/elements/sidebar/MobileSidebar";
-import Footer from "./elements/footer/Footer";
 
 const Layout = ({ children }: { children: JSX.Element }) => {
   const [extendSidebar, setExtendSidebar] = useState<boolean>(false);
@@ -29,7 +28,6 @@ const Layout = ({ children }: { children: JSX.Element }) => {
         )}
       </>
       <PageComponent isMobile={isMobile}>{children}</PageComponent>
-      <Footer isMobile={isMobile} />
       {extendSidebar && <BackgroundSheet />}
     </>
   );

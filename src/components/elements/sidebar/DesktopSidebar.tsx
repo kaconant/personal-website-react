@@ -6,9 +6,19 @@ import {
   DesktopSidebarContainer,
   SidebarWrapper,
   SidebarHeader,
+  SidebarTop,
   SidebarToggleIcon,
+  LinkContainer,
 } from "./sidebarStyle";
 import useOutsideClick from "../../../hooks/useOutsideClick";
+import ImageLink from "../../atoms/imageLink/ImageLink";
+
+import Resume from "../../../assets/pdf/KrissyConantResume2023.pdf";
+import LinkedIn from "../../../assets/icons/linkedin.svg";
+import GitHub from "../../../assets/icons/github.svg";
+import Email from "../../../assets/icons/email.svg";
+import ResumeIcon from "../../../assets/icons/resume.svg";
+import { useLocation } from "react-router-dom";
 
 interface DesktopSidebarProps {
   extendSidebar: boolean;
@@ -22,6 +32,9 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
   const refWrapper = useRef<any>();
   useOutsideClick(refWrapper, () => setExtendSidebar(false));
 
+  let routeLocation = useLocation();
+  const isContactPage = routeLocation.pathname === "/contact";
+
   return (
     <>
       <DesktopSidebarContainer
@@ -30,18 +43,31 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
         isMobile={false}
       >
         <SidebarWrapper isMobile={false}>
-          <SidebarHeader>
-            <SidebarToggleIcon
-              src={HamburgerMenu}
-              alt="nav hamburger menu"
+          <SidebarTop>
+            <SidebarHeader>
+              <SidebarToggleIcon
+                src={HamburgerMenu}
+                alt="nav hamburger menu"
+                extendSidebar={extendSidebar}
+                onClick={() => setExtendSidebar((currState) => !currState)}
+              />
+            </SidebarHeader>
+            <SidebarList
               extendSidebar={extendSidebar}
-              onClick={() => setExtendSidebar((currState) => !currState)}
+              onClickLink={() => setExtendSidebar(false)}
             />
-          </SidebarHeader>
-          <SidebarList
-            extendSidebar={extendSidebar}
-            onClickLink={() => setExtendSidebar(false)}
-          />
+          </SidebarTop>
+          {!isContactPage && (
+            <LinkContainer>
+              <ImageLink
+                href="https://www.linkedin.com/in/krissy-conant/"
+                imgSrc={LinkedIn}
+              />
+              <ImageLink href="https://github.com/kaconant" imgSrc={GitHub} />
+              <ImageLink href="mailto:krissyconant@gmail.com" imgSrc={Email} />
+              <ImageLink href={Resume} imgSrc={ResumeIcon} />
+            </LinkContainer>
+          )}
         </SidebarWrapper>
       </DesktopSidebarContainer>
     </>

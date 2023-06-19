@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { H3 } from "../../textElements";
+import { H4 } from "../../textElements";
 
 type AboutCardProps = {
   isMobile: boolean;
@@ -10,8 +10,9 @@ export const AboutCard = styled.div<AboutCardProps>`
   flex-direction: ${({ isMobile }) => (isMobile ? "column" : "row")};
   gap: 24px;
   padding: 20px;
-  background: var(--midPink);
-  border: 3px solid var(--lightPink);
+  background: var(--grayscale2);
+  border: 3px solid var(--grayscale4);
+  border-radius: 8px;
   width: fit-content;
   align-items: center;
   align-self: center;
@@ -23,6 +24,7 @@ export const AboutImage = styled.img`
   width: auto
   max-width: 450px;
   border: 2px solid var(--white);
+  border-radius: 8px;
 `;
 
 export const AboutContentCard = styled.div`
@@ -31,6 +33,6 @@ export const AboutContentCard = styled.div`
   gap: 24px;
 `;
 
-export const AboutText = styled(H3)<AboutCardProps>`
+export const AboutText = styled(H4)<AboutCardProps>`
   text-align: ${({ isMobile }) => (isMobile ? "center" : "left")};
 `;

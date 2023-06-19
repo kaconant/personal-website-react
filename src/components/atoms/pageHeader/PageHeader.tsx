@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import useMediaQuery from "../../../hooks/useMediaQuery";
-import { HeaderContainer } from "./pageHeaderStyle";
-import { H0, H1 } from "../../textElements";
+import { HeaderContainer, HeaderText, SubheaderText } from "./pageHeaderStyle";
 
 type PageHeaderProps = {
   headerText: string;
@@ -9,12 +8,10 @@ type PageHeaderProps = {
 };
 
 const PageHeader: FC<PageHeaderProps> = ({ headerText, subheaderText }) => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
   return (
     <HeaderContainer>
-      <H0>{headerText}</H0>
-      {subheaderText && <H1>{subheaderText}</H1>}
+      <HeaderText>{headerText}</HeaderText>
+      {subheaderText && <SubheaderText>{subheaderText}</SubheaderText>}
     </HeaderContainer>
   );
 };

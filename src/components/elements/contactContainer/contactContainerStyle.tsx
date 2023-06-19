@@ -1,31 +1,38 @@
 import styled from "styled-components/macro";
-import { H2 } from "../../textElements";
+import { H3 } from "../../textElements";
 
-type ContactCardProps = {
-  isMobile: boolean;
-};
-
-export const ContactCard = styled.div<ContactCardProps>`
+export const ContactCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   padding: 24px;
-  background: var(--midPink);
-  border: 3px solid var(--lightPink);
+  background: var(--grayscale2);
+  border: 3px solid var(--grayscale4);
+  border-radius: 8px;
   align-self: center;
-  width: ${({ isMobile }) => (isMobile ? "inherit" : "fit-content")};
+  align-items: center;
+  width: 100%;
 `;
 
-export const ContactLinks = styled.div<ContactCardProps>`
+export const ContactLinks = styled.div`
   display: flex;
-  gap: ${({ isMobile }) => (isMobile ? "8px" : "32px")};
-  flex-direction: ${({ isMobile }) => (isMobile ? "column" : "row")};
+  flex-direction: row;
+  gap: 40px;
 `;
 
-export const ContactInfo = styled(H2)`
+export const ContactInfo = styled(H3)`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  color: var(--black);
+`;
+
+export const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  bottom: 0px;
+  margin: 0;
 `;

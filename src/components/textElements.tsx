@@ -12,24 +12,29 @@ export const H1 = styled.div`
   line-height: 60px;
   font-family: "East Sea Dokdo", cursive;
   opacity: 70%;
+  letter-spacing: 2px;
 `;
 
 export const H2 = styled.div`
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "East Sea Dokdo", cursive;
+  opacity: 80%;
+  letter-spacing: 2px;
 `;
 
 export const H3 = styled.div`
   font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
 `;
 
 export const H4 = styled.div`
   font-size: 18px;
   line-height: 25.2px;
-  margin-bottom: 16px;
   font-weight: 400;
+  letter-spacing: 2px;
 `;
 
 export const H5 = styled.div`
