@@ -13,7 +13,7 @@ export const AboutCard = styled.div<AboutCardProps>`
   background: var(--grayscale2);
   border: 3px solid var(--grayscale4);
   border-radius: 8px;
-  width: 100vw;
+  width: ${({ isMobile }) => (isMobile ? "100vw" : "fit-content")};
   align-items: center;
   align-self: center;
 `;
