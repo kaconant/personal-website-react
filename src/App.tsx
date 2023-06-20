@@ -1,6 +1,7 @@
 import GlobalStyle from "../src/globalStyles";
 import { Routes, Route } from "react-router-dom";
 import { SIDEBAR_PATHS } from "./components/elements/sidebar/SidebarPaths";
+import ScrollToTop from "./hooks/useScrollToTop";
 
 //Components
 import Layout from "../src/components/Layout";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<SidebarItems />}>
