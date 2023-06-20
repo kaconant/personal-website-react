@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import vaporWaveBackground from "../../../assets/backgrounds/vaporWaveBackground.jpg";
-import { H0, H1 } from "../../textElements";
+import { H0, H2 } from "../../textElements";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ export const HeaderText = styled(H0)`
   border: 3px solid var(--grayscale4);
 `;
 
-export const SubheaderText = styled(H1)`
+export const SubheaderText = styled(H2)`
   background: var(--shell);
   padding: 4px 8px;
   border: 3px solid var(--grayscale4);

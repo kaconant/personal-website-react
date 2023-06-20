@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { H4 } from "../../textElements";
+import { H3, H4 } from "../../textElements";
 
 type AboutCardProps = {
   isMobile: boolean;
@@ -34,5 +34,9 @@ export const AboutContentCard = styled.div`
 `;
 
 export const AboutText = styled(H4)<AboutCardProps>`
+  text-align: ${({ isMobile }) => (isMobile ? "center" : "left")};
+`;
+
+export const AboutHeader = styled(H3)<AboutCardProps>`
   text-align: ${({ isMobile }) => (isMobile ? "center" : "left")};
 `;

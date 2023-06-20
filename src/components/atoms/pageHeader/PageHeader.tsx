@@ -8,10 +8,14 @@ type PageHeaderProps = {
 };
 
 const PageHeader: FC<PageHeaderProps> = ({ headerText, subheaderText }) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <HeaderContainer>
       <HeaderText>{headerText}</HeaderText>
-      {subheaderText && <SubheaderText>{subheaderText}</SubheaderText>}
+      {subheaderText && !isMobile && (
+        <SubheaderText>{subheaderText}</SubheaderText>
+      )}
     </HeaderContainer>
   );
 };

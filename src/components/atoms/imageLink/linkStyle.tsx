@@ -54,8 +54,8 @@ const border: ThemeAttribute = {
 };
 
 const fontFamily: ThemeAttribute = {
-  primary: "Lato, monospace",
-  button: "East Sea Dokdo, cursive",
+  primary: "Montserrat, sans-serif",
+  button: "Yeseva One, cursive",
 };
 
 const opacity: ThemeAttribute = {

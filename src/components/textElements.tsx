@@ -1,40 +1,36 @@
 import styled from "styled-components/macro";
 
 export const H0 = styled.div`
-  font-size: 80px;
-  line-height: 90px;
-  font-family: "East Sea Dokdo", cursive;
+  font-size: 60px;
+  line-height: 70px;
+  font-family: "Yeseva One", cursive;
   opacity: 70%;
 `;
 
 export const H1 = styled.div`
-  font-size: 50px;
-  line-height: 60px;
-  font-family: "East Sea Dokdo", cursive;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Yeseva One", cursive;
   opacity: 70%;
-  letter-spacing: 2px;
 `;
 
 export const H2 = styled.div`
-  font-size: 40px;
-  line-height: 50px;
-  font-family: "East Sea Dokdo", cursive;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Yeseva One", cursive;
   opacity: 80%;
-  letter-spacing: 2px;
 `;
 
 export const H3 = styled.div`
   font-size: 20px;
   line-height: 40px;
   font-weight: 600;
-  letter-spacing: 2px;
 `;
 
 export const H4 = styled.div`
   font-size: 18px;
   line-height: 25.2px;
   font-weight: 400;
-  letter-spacing: 2px;
 `;
 
 export const H5 = styled.div`

@@ -4,6 +4,7 @@ import {
   AboutImage,
   AboutContentCard,
   AboutText,
+  AboutHeader,
 } from "./aboutContainerStyle";
 
 import cryptoRandomString from "crypto-random-string";
@@ -18,18 +19,21 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
   const AboutInformation = [
     {
       id: cryptoRandomString({ length: 10 }),
-      textSection:
-        "My interest in web development started during the wild west days of MySpace ... with a strong, preteen desire to implement the coolest glitter cursor effects you could hack together.",
+      headerText: "beginnings",
+      contentText:
+        "My interest in web development started during the wild west days of MySpace ... with a strong, pre-teen desire to implement the coolest cursor effects you could hack together.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      textSection:
-        "I love building and delivering great user experiences by developing efficient and delightful frontend features for end users and design systems for fellow developers. Additionally, I strive to identify opportunities for reducing churn and increasing revenue.",
+      headerText: "mission",
+      contentText:
+        "I love building and delivering great user experiences by developing efficient and delightful frontend features for end users and design systems for fellow developers. I strive to identify opportunities for reducing churn and increasing revenue.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      textSection:
-        "I have a lovely, chonky cat named Tallulah who has an adventurer's spirit while simultatenously suffers from agoraphobia.",
+      headerText: "...cat?",
+      contentText:
+        "I have a lovely, chonky cat named Tallulah who has an adventurer's spirit while simultaneously suffering from agoraphobia.",
     },
   ];
 
@@ -38,9 +42,14 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
       <AboutImage src={KrissyImage} alt="krissy" />
       <AboutContentCard>
         {AboutInformation.map((aboutText) => (
-          <AboutText isMobile={isMobile} key={aboutText.id}>
-            {aboutText.textSection}
-          </AboutText>
+          <>
+            <AboutHeader isMobile={isMobile}>
+              {aboutText.headerText}
+            </AboutHeader>
+            <AboutText isMobile={isMobile} key={aboutText.id}>
+              {aboutText.contentText}
+            </AboutText>
+          </>
         ))}
       </AboutContentCard>
     </AboutCard>

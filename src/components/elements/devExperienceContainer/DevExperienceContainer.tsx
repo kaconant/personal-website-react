@@ -52,7 +52,7 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
     {
       id: cryptoRandomString({ length: 10 }),
       headerText: "Product / design tools",
-      contentText: "Heap, Jira, Notion, Figma, Heap, Google Optimize",
+      contentText: "Heap, Jira, Notion, Figma, Google Optimize",
     },
     {
       id: cryptoRandomString({ length: 10 }),
@@ -64,7 +64,10 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
 
   return (
     <>
-      <PageHeader headerText="professional experience" />
+      <PageHeader
+        headerText="myspace top 8 list"
+        subheaderText="with my professional experience"
+      />
       <DevExpertiseCard isMobile={isMobile}>
         {DevExperience.map((experience) => (
           <Section key={experience.id}>

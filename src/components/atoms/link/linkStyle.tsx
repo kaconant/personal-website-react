@@ -25,12 +25,12 @@ const hoverTextColors: ThemeAttribute = {
 
 const fontSize: ThemeAttribute = {
   primary: "20px",
-  button: "40px",
+  button: "30px",
 };
 
 const lineHeight: ThemeAttribute = {
   primary: "30px",
-  button: "50px",
+  button: "40px",
 };
 
 const fontWeight: ThemeAttribute = {
@@ -59,8 +59,8 @@ const hoverBorderColors: ThemeAttribute = {
 };
 
 const fontFamily: ThemeAttribute = {
-  primary: "Lato, monospace",
-  button: "East Sea Dokdo, cursive",
+  primary: "Montserrat, sans-serif",
+  button: "Yeseva One, cursive",
 };
 
 const opacity: ThemeAttribute = {

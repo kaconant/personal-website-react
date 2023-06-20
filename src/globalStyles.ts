@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     border: none;
     text-decoration: none;
-    font-family: "Lato", monospace;
+    font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
