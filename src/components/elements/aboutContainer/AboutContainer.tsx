@@ -41,15 +41,15 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
     <AboutCard isMobile={isMobile}>
       <AboutImage src={KrissyImage} alt="krissy" />
       <AboutContentCard>
-        {AboutInformation.map((aboutText) => (
-          <>
+        {AboutInformation.map((aboutText, index) => (
+          <div key={index}>
             <AboutHeader isMobile={isMobile}>
               {aboutText.headerText}
             </AboutHeader>
             <AboutText isMobile={isMobile} key={aboutText.id}>
               {aboutText.contentText}
             </AboutText>
-          </>
+          </div>
         ))}
       </AboutContentCard>
     </AboutCard>
