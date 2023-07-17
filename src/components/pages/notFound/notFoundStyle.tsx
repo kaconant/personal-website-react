@@ -5,5 +5,5 @@ export const NotFoundContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  width: 100%;
 `;
-
