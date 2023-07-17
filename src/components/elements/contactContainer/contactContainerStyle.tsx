@@ -8,7 +8,7 @@ export const ContactCard = styled.div`
   padding: 24px;
   background: var(--grayscale2);
   border: 3px solid var(--grayscale4);
-  border-radius: 8px;
+  border-radius: var(--standardBorderRadius);
   align-self: center;
   align-items: center;
   width: auto;

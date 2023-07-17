@@ -63,7 +63,7 @@ export const SidebarListItem = styled.li<SidebarProps>`
   margin-top: 8px;
   width: 100%;
   padding: 8px 4px 8px 0;
-  border-radius: 6px;
+  border-radius: var(--standardBorderRadius);
   cursor: pointer;
 `;
 

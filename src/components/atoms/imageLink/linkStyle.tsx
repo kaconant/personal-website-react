@@ -80,7 +80,7 @@ export const LinkElement = styled.a<ButtonProps>`
   font-weight: ${({ theme }) => fontWeight[theme as keyof typeof fontWeight]};
   padding: ${({ theme }) => padding[theme as keyof typeof padding]};
   border: ${({ theme }) => border[theme as keyof typeof border]};
-  border-radius: 10px;
+  border-radius: 6px;
   opacity: ${({ theme }) => opacity[theme as keyof typeof opacity]};
   justify-content: ${({ theme }) =>
     justifyItems[theme as keyof typeof justifyItems]};

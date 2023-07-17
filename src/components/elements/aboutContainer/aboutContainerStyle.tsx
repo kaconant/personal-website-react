@@ -12,7 +12,7 @@ export const AboutCard = styled.div<AboutCardProps>`
   padding: 20px;
   background: var(--grayscale2);
   border: 3px solid var(--grayscale4);
-  border-radius: 8px;
+  border-radius: var(--standardBorderRadius);
   width: ${({ isMobile }) => (isMobile ? "100%" : "fit-content")};
   align-items: center;
   align-self: center;
@@ -24,7 +24,7 @@ export const AboutImage = styled.img<AboutCardProps>`
   width: auto;
   max-width: ${({ isMobile }) => (isMobile ? "400px" : "450px")};
   border: 2px solid var(--white);
-  border-radius: 8px;
+  border-radius: var(--standardBorderRadius);
 `;
 
 export const AboutContentCard = styled.div`

@@ -15,9 +15,10 @@ export const ProjectCard = styled.div<ProjectContainerProps>`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: 1px solid var(--grayscale4);
+  border: 3px solid var(--grayscale4);
   background: var(--white);
   padding: 24px;
+  border-radius: var(--standardBorderRadius);
 `;
 
 export const ProjectText = styled.div`
@@ -43,5 +44,5 @@ export const ProjectImage = styled.img`
   width: 100%;
   background: var(--shell);
   border: 1px solid var(--white);
-  border-radius: 8px;
+  border-radius: var(--standardBorderRadius);
 `;

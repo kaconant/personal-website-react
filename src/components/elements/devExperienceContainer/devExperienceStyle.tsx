@@ -19,7 +19,7 @@ export const Section = styled.div`
   padding: 12px;
   background-color: var(--grayscale2);
   border: 3px solid var(--grayscale4);
-  border-radius: 8px;
+  border-radius: var(--standardBorderRadius);
 `;
 
 export const SectionHeader = styled(H2)`

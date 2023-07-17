@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   background-image: url(${vaporWaveBackground});
   border: 3px solid var(--grayscale4);
-  border-radius: 8px;
+  border-radius: var(--standardBorderRadius);
   padding: 24px;
   width: 100%;
   gap: 20px;
@@ -18,6 +18,7 @@ export const HeaderContainer = styled.div`
 export const HeaderText = styled(H1)`
   background: var(--shell);
   padding: 8px;
+  border-radius: var(--standardBorderRadius);
   border: 3px solid var(--grayscale4);
 
   @media only screen and (max-width: 768px) {
@@ -31,6 +32,7 @@ export const HeaderText = styled(H1)`
 export const SubheaderText = styled(H2)`
   background: var(--shell);
   padding: 4px 8px;
+  border-radius: var(--standardBorderRadius);
   border: 3px solid var(--grayscale4);
 
   @media only screen and (max-width: 768px) {

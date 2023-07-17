@@ -34,7 +34,8 @@ export const rootDimensions = {
   desktopPaddingTopHeight: "40px",
   mobilePaddingTopHeight: "100px",
   midZIndex: 5,
-  topZIndex: 10
+  topZIndex: 10,
+  standardBorderRadius: "6px"
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -73,6 +74,9 @@ const GlobalStyle = createGlobalStyle`
     /* z-index */ 
     --midZIndex: ${rootDimensions.midZIndex};
     --topZIndex: ${rootDimensions.topZIndex};
+
+    /* border radius */
+    --standardBorderRadius: ${rootDimensions.standardBorderRadius};
   }
 
   * {
