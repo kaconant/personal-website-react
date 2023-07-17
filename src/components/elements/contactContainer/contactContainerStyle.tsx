@@ -4,14 +4,14 @@ import { H3 } from "../../textElements";
 export const ContactCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   padding: 24px;
   background: var(--grayscale2);
   border: 3px solid var(--grayscale4);
   border-radius: 8px;
   align-self: center;
   align-items: center;
-  width: 100%;
+  width: auto;
 `;
 
 export const ContactLinks = styled.div`

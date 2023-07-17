@@ -90,3 +90,5 @@ export const LinkElement = styled.a<ButtonProps>`
       hoverTextColors[theme as keyof typeof hoverTextColors]};
   }
 `;
+
+export const LinkImage = styled.img``;

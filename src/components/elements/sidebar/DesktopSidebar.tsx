@@ -1,6 +1,6 @@
 import React, { FC, useRef } from "react";
-import SidebarList from "./SidebarList";
-import HamburgerMenu from "../../../assets/icons/HamburgerMenu.svg";
+import { useLocation } from "react-router-dom";
+import useOutsideClick from "../../../hooks/useOutsideClick";
 
 import {
   DesktopSidebarContainer,
@@ -10,15 +10,17 @@ import {
   SidebarToggleIcon,
   LinkContainer,
 } from "./sidebarStyle";
-import useOutsideClick from "../../../hooks/useOutsideClick";
-import ImageLink from "../../atoms/imageLink/ImageLink";
-
+import HamburgerMenu from "../../../assets/icons/HamburgerMenu.svg";
 import Resume from "../../../assets/pdf/KrissyConantResume2023.pdf";
 import LinkedIn from "../../../assets/icons/linkedin.svg";
 import GitHub from "../../../assets/icons/github.svg";
 import Email from "../../../assets/icons/email.svg";
-import ResumeIcon from "../../../assets/icons/resume.svg";
-import { useLocation } from "react-router-dom";
+import File from "../../../assets/icons/file.svg";
+import Folder from "../../../assets/icons/folder.svg";
+
+import SidebarList from "./SidebarList";
+import ImageLink from "../../atoms/imageLink/ImageLink";
+import cryptoRandomString from "crypto-random-string";
 
 interface DesktopSidebarProps {
   extendSidebar: boolean;
@@ -34,6 +36,39 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
 
   let routeLocation = useLocation();
   const isContactPage = routeLocation.pathname === "/contact";
+
+  const SidebarLinks = [
+    {
+      id: cryptoRandomString({ length: 10 }),
+      href: "https://www.linkedin.com/in/krissy-conant/",
+      imgSrc: LinkedIn,
+      tooltip: "LinkedIn",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      href: "https://github.com/kaconant",
+      imgSrc: GitHub,
+      tooltip: "GitHub",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      href: "mailto:krissyconant@gmail.com",
+      imgSrc: Email,
+      tooltip: "Email",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      href: Resume,
+      imgSrc: File,
+      tooltip: "Resume",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      href: "https://krissy-conant.notion.site/00cfc96784af43c1931cf3341e21ef7f?v=712e36f87c45461581e7f60da2837c90&pvs=4",
+      imgSrc: Folder,
+      tooltip: "Wiki",
+    },
+  ];
 
   return (
     <>
@@ -59,13 +94,14 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
           </SidebarTop>
           {!isContactPage && (
             <LinkContainer>
-              <ImageLink
-                href="https://www.linkedin.com/in/krissy-conant/"
-                imgSrc={LinkedIn}
-              />
-              <ImageLink href="https://github.com/kaconant" imgSrc={GitHub} />
-              <ImageLink href="mailto:krissyconant@gmail.com" imgSrc={Email} />
-              <ImageLink href={Resume} imgSrc={ResumeIcon} />
+              {SidebarLinks.map((sidebarLink) => (
+                <ImageLink
+                  key={sidebarLink.id}
+                  href={sidebarLink.href}
+                  imgSrc={sidebarLink.imgSrc}
+                  tooltip={sidebarLink.tooltip}
+                />
+              ))}
             </LinkContainer>
           )}
         </SidebarWrapper>
