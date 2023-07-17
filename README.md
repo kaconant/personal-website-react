@@ -2,8 +2,9 @@
 
 A basic portfolio that highlights my frontend development skills - built using [Create React App](https://github.com/facebook/create-react-app) and [Styled Components](https://styled-components.com/). Deployed on [Heroku](https://www.heroku.com/). 
 
-TODOS:
+Todos:
 - Add some [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/) tests.
+- Add [Storybook](https://storybook.js.org/) integration.
 
 ## Available Scripts
 
