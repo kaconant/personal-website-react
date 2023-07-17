@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <HomeContainer isMobile={isNarrow}>
+      <HomeContainer>
         <PageHeader
           headerText="hi, i'm Krissy"
           subheaderText="an ATL-based senior frontend software developer"

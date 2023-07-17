@@ -89,8 +89,8 @@ export const PageComponent = styled.div<SidebarProps>`
   margin-left: ${({ isMobile }) =>
     isMobile ? "0" : "var(--desktopClosedSidebarWidth)"};
   background-color: var(--lightPurple);
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 40px;
   padding-top: ${({ isMobile }) =>
     isMobile

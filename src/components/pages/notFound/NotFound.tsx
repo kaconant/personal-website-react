@@ -1,16 +1,14 @@
 import PageHeader from "../../atoms/pageHeader/PageHeader";
 
-import Tallulah from "../../../assets/photos/self/Tallulah.jpg";
-import { NotFoundContainer, NotFoundImage } from "./notFoundStyle";
+import { NotFoundContainer } from "./notFoundStyle";
 
 const NotFound = () => {
   return (
     <NotFoundContainer>
       <PageHeader
         headerText="path less traveled, eh?"
-        subheaderText="you've discovered my 404 page (and tallulah)"
+        subheaderText="congrats ~ you've discovered my 404 page!"
       />
-      <NotFoundImage src={Tallulah} alt="krissy" />
     </NotFoundContainer>
   );
 };
