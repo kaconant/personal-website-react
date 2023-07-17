@@ -8,15 +8,15 @@ export const H0 = styled.div`
 `;
 
 export const H1 = styled.div`
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 44px;
+  line-height: 50px;
   font-family: "Yeseva One", cursive;
   opacity: 70%;
 `;
 
 export const H2 = styled.div`
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 36px;
   font-family: "Yeseva One", cursive;
   opacity: 80%;
 `;

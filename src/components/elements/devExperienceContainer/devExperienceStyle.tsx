@@ -24,6 +24,12 @@ export const Section = styled.div`
 
 export const SectionHeader = styled(H2)`
   color: var(--darkPurple);
+
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+  }
 `;
 
 export const SectionContent = styled(H4)`

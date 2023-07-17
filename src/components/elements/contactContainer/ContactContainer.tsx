@@ -1,8 +1,5 @@
 import { FC } from "react";
-import {
-  ContactCard,
-  ContactLinks,
-} from "./contactContainerStyle";
+import { ContactCard, ContactLinks } from "./contactContainerStyle";
 
 import Link from "../../atoms/link/Link";
 import Resume from "../../../assets/pdf/KrissyConantResume2023.pdf";
@@ -23,7 +20,6 @@ const ContactContainer: FC = () => {
         <ImageLink href="https://github.com/kaconant" imgSrc={GitHub} />
         <ImageLink href="mailto:krissyconant@gmail.com" imgSrc={Email} />
       </ContactLinks>
-
       <Link href={Resume} theme="button" linkContent="Check out my resume" />
     </ContactCard>
   );

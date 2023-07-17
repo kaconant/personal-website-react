@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import vaporWaveBackground from "../../../assets/backgrounds/vaporWaveBackground.jpg";
-import { H0, H2 } from "../../textElements";
+import { H1, H2 } from "../../textElements";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -15,14 +15,27 @@ export const HeaderContainer = styled.div`
   gap: 20px;
 `;
 
-export const HeaderText = styled(H0)`
+export const HeaderText = styled(H1)`
   background: var(--shell);
   padding: 8px;
   border: 3px solid var(--grayscale4);
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: "Yeseva One", cursive;
+    opacity: 80%;
+  }
 `;
 
 export const SubheaderText = styled(H2)`
   background: var(--shell);
   padding: 4px 8px;
   border: 3px solid var(--grayscale4);
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 400;
+  }
 `;

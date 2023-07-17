@@ -10,7 +10,7 @@ import NotFound from "./components/pages/notFound/NotFound";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" role="main">
       <GlobalStyle />
       <ScrollToTop />
       <Layout>

@@ -21,13 +21,13 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
       id: cryptoRandomString({ length: 10 }),
       headerText: "beginnings",
       contentText:
-        "My interest in web development started during the wild west days of MySpace ... with a strong, pre-teen desire to implement the coolest cursor effects you could hack together.",
+        "My interest in web development started during the wild west days of MySpace ... with a strong, pre-teen desire to implement the coolest cursor effects you could hack together. Over time, I realized the lack of women in STEM and decided it was time to bring my skills and unique perspective to the table.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
       headerText: "mission",
       contentText:
-        "I love building and delivering great user experiences by developing efficient and delightful frontend features for end users and design systems for fellow developers. I strive to identify opportunities for reducing churn and increasing revenue.",
+        "Foremost, I strive to build and deliver great user experiences by developing efficient and delightful frontend features for end users and design systems for fellow developers. Because of my varied background in the tech industry, I focus on working cross-functionally with other departments to identify opportunities to reduce churn and increase revenue. I greatly enjoy mentoring fellow engineers, designers and product managers as well as learning new technologies and methodlogies.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
@@ -39,7 +39,7 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
 
   return (
     <AboutCard isMobile={isMobile}>
-      <AboutImage src={KrissyImage} alt="krissy" />
+      <AboutImage isMobile={isMobile} src={KrissyImage} alt="krissy" />
       <AboutContentCard>
         {AboutInformation.map((aboutText, index) => (
           <div key={index}>

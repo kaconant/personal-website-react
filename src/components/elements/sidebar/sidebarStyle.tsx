@@ -82,7 +82,6 @@ export const SidebarListItemName = styled(H3)<SidebarProps>`
   }
 `;
 
-// TODO: 100% vs 100vh height
 export const PageComponent = styled.div<SidebarProps>`
   display: flex;
   flex-direction: column;
@@ -90,8 +89,8 @@ export const PageComponent = styled.div<SidebarProps>`
   margin-left: ${({ isMobile }) =>
     isMobile ? "0" : "var(--desktopClosedSidebarWidth)"};
   background-color: var(--lightPurple);
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 40px;
   padding-top: ${({ isMobile }) =>
     isMobile

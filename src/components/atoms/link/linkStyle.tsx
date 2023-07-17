@@ -25,12 +25,12 @@ const hoverTextColors: ThemeAttribute = {
 
 const fontSize: ThemeAttribute = {
   primary: "20px",
-  button: "30px",
+  button: "24px",
 };
 
 const lineHeight: ThemeAttribute = {
   primary: "30px",
-  button: "40px",
+  button: "36px",
 };
 
 const fontWeight: ThemeAttribute = {
@@ -97,5 +97,11 @@ export const LinkElement = styled.a<ButtonProps>`
       hoverTextColors[theme as keyof typeof hoverTextColors]};
     border-color: ${({ theme }) =>
       hoverBorderColors[theme as keyof typeof hoverTextColors]};
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
   }
 `;

@@ -30,6 +30,12 @@ export const ProjectHeader = styled(H2)`
   line-height: 40px;
   color: var(--darkPurple);
   text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+  }
 `;
 
 export const ProjectImage = styled.img`

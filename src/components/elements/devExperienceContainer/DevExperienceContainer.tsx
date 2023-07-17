@@ -17,31 +17,21 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
   const DevExperience = [
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "Areas of dev experience",
+      headerText: "Languages & Frameworks",
       contentText:
-        "Recommerce, Ecommerce, CRM, Internal tools, Design systems, UX",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Tech company experience",
-      contentText:
-        "Customer success, Project management, Inbound Marketing, Event planning",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Languages / frameworks",
-      contentText:
-        "JavaScript, TypeScript, React, Vue 2, Vue 3, Vuex, Nextjs, Knockout",
+        "JavaScript, TypeScript, React, Vue 2 / 3, Vuex, Nodejs, Nextjs, Knockout, C#",
     },
     {
       id: cryptoRandomString({ length: 10 }),
       headerText: "Libraries",
-      contentText: "Apollo GraphQL, Jest, React Testing Library",
+      contentText:
+        "Apollo GraphQL, React Query, Jest, React Testing Library, Axios",
     },
     {
       id: cryptoRandomString({ length: 10 }),
       headerText: "CSS skills",
-      contentText: "SCSS, Flexbox, Grid, Styled Components, Bootstrap",
+      contentText:
+        "Styled Components, Tailwind, Bootstrap, Flexbox, Grid, SCSS",
     },
     {
       id: cryptoRandomString({ length: 10 }),
@@ -51,7 +41,7 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "Product / design tools",
+      headerText: "Product & design tools",
       contentText: "Heap, Jira, Notion, Figma, Google Optimize",
     },
     {
@@ -59,6 +49,17 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
       headerText: "Favorite extensions",
       contentText:
         "Lighthouse, A11ygator, Wappalyzer, React DevTools, Apollo DevTools",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      headerText: "Project management styles",
+      contentText: "Agile, Scrum, Kanban, Waterfall",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      headerText: "Tech company experience",
+      contentText:
+        "Customer success, Project management, Inbound Marketing, Event planning",
     },
   ];
 
