@@ -12,6 +12,7 @@ export const ContactCard = styled.div`
   align-self: center;
   align-items: center;
   width: auto;
+  min-width: 340px;
 `;
 
 export const ContactLinks = styled.div`

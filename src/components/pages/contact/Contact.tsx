@@ -16,7 +16,10 @@ const Contact = () => {
 
   return (
     <ContactPageContainer>
-      <PageHeader headerText="wanna contact me?" />
+      <PageHeader
+        headerText="contact me"
+        subheaderText="for work or tallulah photos - dealer's choice"
+      />
       <ContactContent isMobile={isNarrow}>
         <ContactContainer />
         <ContactImage isMobile={isNarrow} src={Tallulah} alt="krissy" />
