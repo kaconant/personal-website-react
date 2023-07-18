@@ -21,7 +21,7 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import cryptoRandomString from "crypto-random-string";
 
 const ProjectContainer: FC = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isNarrow = useMediaQuery("(max-width: 768px)");
 
   const ProjectInformation = [
     {
@@ -108,9 +108,9 @@ const ProjectContainer: FC = () => {
   ];
 
   return (
-    <ProjectContainerCard isMobile={isMobile}>
+    <ProjectContainerCard isNarrow={isNarrow}>
       {ProjectInformation.map((project) => (
-        <ProjectCard key={project.id} isMobile={isMobile}>
+        <ProjectCard key={project.id} isNarrow={isNarrow}>
           <ProjectText>
             <ProjectHeader>{project.title}</ProjectHeader>
             <H4>Category: {project.category}</H4>

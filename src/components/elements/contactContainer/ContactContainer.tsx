@@ -11,7 +11,11 @@ import GitHub from "../../../assets/icons/github.svg";
 import Email from "../../../assets/icons/email.svg";
 import Folder from "../../../assets/icons/folder.svg";
 
-const ContactContainer: FC = () => {
+type ContactContainerProps = {
+  isNarrow: boolean;
+};
+
+const ContactContainer: FC<ContactContainerProps> = ({ isNarrow }) => {
   const ContactImageLinks = [
     {
       id: cryptoRandomString({ length: 10 }),
@@ -40,7 +44,7 @@ const ContactContainer: FC = () => {
   ];
 
   return (
-    <ContactCard>
+    <ContactCard isNarrow={isNarrow}>
       <ContactLinks>
         {ContactImageLinks.map((contactImageLink) => (
           <ImageLink

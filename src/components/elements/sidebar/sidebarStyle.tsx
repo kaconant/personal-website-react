@@ -3,13 +3,13 @@ import { H3 } from "../../textElements";
 
 interface SidebarProps {
   extendSidebar?: boolean;
-  isMobile?: boolean;
+  isNarrow?: boolean;
 }
 
 const SidebarContainer = styled.div<SidebarProps>`
   display: flex;
   position: fixed;
-  padding: ${({ isMobile }) => (isMobile ? "24px" : "40px")};
+  padding: ${({ isNarrow }) => (isNarrow ? "24px" : "40px")};
   background-color: var(--shell);
   border: 2px solid var(--grayscale4);
   transition: width 350ms ease, height 350ms ease;
@@ -36,7 +36,7 @@ export const SidebarWrapper = styled.div<SidebarProps>`
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  align-items: ${({ isMobile }) => (isMobile ? "center" : "none")};
+  align-items: ${({ isNarrow }) => (isNarrow ? "center" : "none")};
 `;
 
 export const SidebarTop = styled.div``;
@@ -59,7 +59,7 @@ export const SidebarListContainer = styled.ul<SidebarProps>`
 
 export const SidebarListItem = styled.li<SidebarProps>`
   display: flex;
-  justify-content: ${({ isMobile }) => (isMobile ? "center" : "none")};
+  justify-content: ${({ isNarrow }) => (isNarrow ? "center" : "none")};
   margin-top: 8px;
   width: 100%;
   padding: 8px 4px 8px 0;
@@ -86,14 +86,14 @@ export const PageComponent = styled.div<SidebarProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: ${({ isMobile }) =>
-    isMobile ? "0" : "var(--desktopClosedSidebarWidth)"};
+  margin-left: ${({ isNarrow }) =>
+    isNarrow ? "0" : "var(--desktopClosedSidebarWidth)"};
   background-color: var(--lightPurple);
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 40px;
-  padding-top: ${({ isMobile }) =>
-    isMobile
+  padding-top: ${({ isNarrow }) =>
+    isNarrow
       ? "var(--mobilePaddingTopHeight)"
       : "var(--desktopPaddingTopHeight)"};
   min-height: 100vh;

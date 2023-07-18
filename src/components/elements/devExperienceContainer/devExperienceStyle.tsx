@@ -2,12 +2,12 @@ import styled from "styled-components/macro";
 import { H2, H4 } from "../../textElements";
 
 type DevExpertiseProps = {
-  isMobile: boolean;
+  isNarrow: boolean;
 };
 
 export const DevExpertiseCard = styled.div<DevExpertiseProps>`
   display: grid;
-  grid-template-columns: ${({ isMobile }) => (isMobile ? "1fr" : "1fr 1fr")};
+  grid-template-columns: ${({ isNarrow }) => (isNarrow ? "1fr" : "1fr 1fr")};
   gap: 24px;
   text-align: center;
 `;

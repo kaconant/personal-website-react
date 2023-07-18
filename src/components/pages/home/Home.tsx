@@ -7,7 +7,7 @@ import DevExperienceContainer from "../../elements/devExperienceContainer/DevExp
 import MarqueeSlider from "../../elements/marqueeSlider/MarqueeSlider";
 
 const Home = () => {
-  const isNarrow = useMediaQuery("(max-width: 1000px)");
+  const isNarrow = useMediaQuery("(max-width: 900px)");
 
   return (
     <>
@@ -17,8 +17,8 @@ const Home = () => {
           subheaderText="an ATL-based senior frontend software developer"
         />
         <MarqueeSlider />
-        <AboutContainer isMobile={isNarrow} />
-        <DevExperienceContainer isMobile={isNarrow} />
+        <AboutContainer isNarrow={isNarrow} />
+        <DevExperienceContainer isNarrow={isNarrow} />
       </HomeContainer>
     </>
   );

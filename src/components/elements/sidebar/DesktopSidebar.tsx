@@ -75,9 +75,9 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
       <DesktopSidebarContainer
         ref={refWrapper}
         extendSidebar={extendSidebar}
-        isMobile={false}
+        isNarrow={false}
       >
-        <SidebarWrapper isMobile={false}>
+        <SidebarWrapper isNarrow={false}>
           <SidebarTop>
             <SidebarHeader>
               <SidebarToggleIcon

@@ -12,10 +12,10 @@ import cryptoRandomString from "crypto-random-string";
 import KrissyImage from "../../../assets/photos/self/KrissyRainbow.jpg";
 
 type AboutContainerProps = {
-  isMobile: boolean;
+  isNarrow: boolean;
 };
 
-const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
+const AboutContainer: FC<AboutContainerProps> = ({ isNarrow }) => {
   const AboutInformation = [
     {
       id: cryptoRandomString({ length: 10 }),
@@ -38,15 +38,15 @@ const AboutContainer: FC<AboutContainerProps> = ({ isMobile }) => {
   ];
 
   return (
-    <AboutCard isMobile={isMobile}>
-      <AboutImage isMobile={isMobile} src={KrissyImage} alt="krissy" />
+    <AboutCard isNarrow={isNarrow}>
+      <AboutImage isNarrow={isNarrow} src={KrissyImage} alt="krissy" />
       <AboutContentCard>
         {AboutInformation.map((aboutText, index) => (
           <div key={index}>
-            <AboutHeader isMobile={isMobile}>
+            <AboutHeader isNarrow={isNarrow}>
               {aboutText.headerText}
             </AboutHeader>
-            <AboutText isMobile={isMobile} key={aboutText.id}>
+            <AboutText isNarrow={isNarrow} key={aboutText.id}>
               {aboutText.contentText}
             </AboutText>
           </div>

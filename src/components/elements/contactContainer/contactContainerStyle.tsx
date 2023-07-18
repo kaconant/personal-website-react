@@ -1,7 +1,11 @@
 import styled from "styled-components/macro";
 import { H3 } from "../../textElements";
 
-export const ContactCard = styled.div`
+type ContactCardProps = {
+  isNarrow?: boolean;
+};
+
+export const ContactCard = styled.div<ContactCardProps>`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -12,7 +16,7 @@ export const ContactCard = styled.div`
   align-self: center;
   align-items: center;
   width: auto;
-  min-width: 340px;
+  min-width: ${({ isNarrow }) => (isNarrow ? "100%" : "340px")};
 `;
 
 export const ContactLinks = styled.div`

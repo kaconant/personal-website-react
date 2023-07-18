@@ -10,12 +10,12 @@ import MobileSidebar from "../components/elements/sidebar/MobileSidebar";
 
 const Layout = ({ children }: { children: JSX.Element }) => {
   const [extendSidebar, setExtendSidebar] = useState<boolean>(false);
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isNarrow = useMediaQuery("(max-width: 768px)");
 
   return (
     <>
       <>
-        {isMobile ? (
+        {isNarrow ? (
           <MobileSidebar
             extendSidebar={extendSidebar}
             setExtendSidebar={setExtendSidebar}
@@ -27,7 +27,7 @@ const Layout = ({ children }: { children: JSX.Element }) => {
           />
         )}
       </>
-      <PageComponent isMobile={isMobile}>{children}</PageComponent>
+      <PageComponent isNarrow={isNarrow}>{children}</PageComponent>
       {extendSidebar && <BackgroundSheet />}
     </>
   );

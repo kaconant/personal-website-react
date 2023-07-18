@@ -2,27 +2,27 @@ import styled from "styled-components/macro";
 import { H3, H5 } from "../../textElements";
 
 type AboutCardProps = {
-  isMobile: boolean;
+  isNarrow: boolean;
 };
 
 export const AboutCard = styled.div<AboutCardProps>`
   display: flex;
-  flex-direction: ${({ isMobile }) => (isMobile ? "column" : "row")};
+  flex-direction: ${({ isNarrow }) => (isNarrow ? "column" : "row")};
   gap: 24px;
   padding: 20px;
   background: var(--grayscale2);
   border: 3px solid var(--grayscale4);
   border-radius: var(--standardBorderRadius);
-  width: ${({ isMobile }) => (isMobile ? "100%" : "fit-content")};
+  width: ${({ isNarrow }) => (isNarrow ? "100%" : "fit-content")};
   align-items: center;
   align-self: center;
 `;
 
 export const AboutImage = styled.img<AboutCardProps>`
   height: 100%;
-  max-height: ${({ isMobile }) => (isMobile ? "400px" : "450px")};
+  max-height: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
   width: auto;
-  max-width: ${({ isMobile }) => (isMobile ? "400px" : "450px")};
+  max-width: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
   border: 2px solid var(--white);
   border-radius: var(--standardBorderRadius);
 `;
@@ -34,7 +34,7 @@ export const AboutContentCard = styled.div`
 `;
 
 export const AboutHeader = styled(H3)<AboutCardProps>`
-  text-align: ${({ isMobile }) => (isMobile ? "center" : "left")};
+  text-align: ${({ isNarrow }) => (isNarrow ? "center" : "left")};
 
   @media only screen and (max-width: 768px) {
     font-size: 20px;
@@ -44,7 +44,7 @@ export const AboutHeader = styled(H3)<AboutCardProps>`
 `;
 
 export const AboutText = styled(H5)<AboutCardProps>`
-  text-align: ${({ isMobile }) => (isMobile ? "center" : "left")};
+  text-align: ${({ isNarrow }) => (isNarrow ? "center" : "left")};
 
   @media only screen and (max-width: 768px) {
     font-size: 16px;

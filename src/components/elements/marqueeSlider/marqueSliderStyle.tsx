@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 import { H4 } from "../../textElements";
 
 type MarqueeSliderProps = {
-  isMobile?: boolean;
+  isNarrow?: boolean;
 };
 
 export const MarqueeContainer = styled.div<MarqueeSliderProps>`

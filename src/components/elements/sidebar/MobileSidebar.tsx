@@ -27,9 +27,9 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
       <MobileSidebarContainer
         ref={refWrapper}
         extendSidebar={extendSidebar}
-        isMobile={true}
+        isNarrow={true}
       >
-        <SidebarWrapper isMobile={true}>
+        <SidebarWrapper isNarrow={true}>
           <SidebarHeader>
             <SidebarToggleIcon
               src={HamburgerMenu}

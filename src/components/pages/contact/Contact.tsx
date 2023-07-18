@@ -12,7 +12,7 @@ import {
 } from "./contactStyle";
 
 const Contact = () => {
-  const isNarrow = useMediaQuery("(max-width: 1000px)");
+  const isNarrow = useMediaQuery("(max-width: 900px)");
 
   return (
     <ContactPageContainer>
@@ -20,9 +20,9 @@ const Contact = () => {
         headerText="contact me"
         subheaderText="for work or tallulah photos - dealer's choice"
       />
-      <ContactContent isMobile={isNarrow}>
-        <ContactContainer />
-        <ContactImage isMobile={isNarrow} src={Tallulah} alt="krissy" />
+      <ContactContent isNarrow={isNarrow}>
+        <ContactContainer isNarrow={isNarrow} />
+        <ContactImage isNarrow={isNarrow} src={Tallulah} alt="krissy" />
       </ContactContent>
     </ContactPageContainer>
   );

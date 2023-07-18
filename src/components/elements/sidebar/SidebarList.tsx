@@ -16,7 +16,7 @@ interface SidebarListProps {
 
 const SidebarList: FC<SidebarListProps> = ({ extendSidebar, onClickLink }) => {
   const [activeItem, setActiveItem] = useState(0);
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isNarrow = useMediaQuery("(max-width: 768px)");
 
   return (
     <>
@@ -24,7 +24,7 @@ const SidebarList: FC<SidebarListProps> = ({ extendSidebar, onClickLink }) => {
         {SIDEBAR_PATHS.map((itemData, index) => (
           <SidebarListItem
             key={index}
-            isMobile={isMobile}
+            isNarrow={isNarrow}
             onClick={() => setActiveItem(index)}
             className={index === activeItem ? "active" : ""}
           >

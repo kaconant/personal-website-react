@@ -10,10 +10,10 @@ import {
 import cryptoRandomString from "crypto-random-string";
 
 type DevExperienceProps = {
-  isMobile: boolean;
+  isNarrow: boolean;
 };
 
-const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
+const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
   const DevExperience = [
     {
       id: cryptoRandomString({ length: 10 }),
@@ -69,7 +69,7 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isMobile }) => {
         headerText="myspace top 8 list"
         subheaderText="with my professional experience"
       />
-      <DevExpertiseCard isMobile={isMobile}>
+      <DevExpertiseCard isNarrow={isNarrow}>
         {DevExperience.map((experience) => (
           <Section key={experience.id}>
             <SectionHeader>{experience.headerText}</SectionHeader>
