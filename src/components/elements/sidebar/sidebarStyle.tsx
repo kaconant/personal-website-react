@@ -10,7 +10,7 @@ const SidebarContainer = styled.div<SidebarProps>`
   display: flex;
   position: fixed;
   padding: ${({ isNarrow }) => (isNarrow ? "24px" : "40px")};
-  background-color: var(--shell);
+  background-color: var(--grayscale2);
   border: 2px solid var(--grayscale4);
   transition: width 350ms ease, height 350ms ease;
   overflow-x: hidden;
