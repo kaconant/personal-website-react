@@ -21,7 +21,7 @@ const AboutContainer: FC<AboutContainerProps> = ({ isNarrow }) => {
       id: cryptoRandomString({ length: 10 }),
       headerText: "beginnings",
       contentText:
-        "My interest in web development started during the wild west days of MySpace ... with a strong, pre-teen desire to implement the coolest cursor effects you could hack together. Over time, I realized the lack of women in STEM and decided it was time to bring my skills and unique perspective to the table.",
+        "My interest in web development started during the wild west days of MySpace with a strong, pre-teen desire to implement the coolest cursor effects you could hack together. Over time, I realized the lack of women in STEM and decided it was time to bring my skills and unique perspective to the table.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
