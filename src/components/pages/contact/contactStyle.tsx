@@ -22,9 +22,9 @@ export const ContactPageContainer = styled.div`
 
 export const ContactImage = styled.img<ContactPageProps>`
   height: 100%;
-  max-height: ${({ isNarrow }) => (isNarrow ? "100%" : "340px")};
+  max-height: ${({ isNarrow }) => (isNarrow ? "340px" : "340px")};
   width: auto;
-  max-width: ${({ isNarrow }) => (isNarrow ? "100%" : "340px")};
+  max-width: ${({ isNarrow }) => (isNarrow ? "340px" : "340px")};
   border: 2px solid var(--white);
   border-radius: var(--standardBorderRadius);
 `;
