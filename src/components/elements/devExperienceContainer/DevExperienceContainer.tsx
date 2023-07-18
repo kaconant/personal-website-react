@@ -42,7 +42,8 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
     {
       id: cryptoRandomString({ length: 10 }),
       headerText: "Product & design tools",
-      contentText: "Heap, Jira, Notion, Figma, Google Optimize",
+      contentText:
+        "Jira, Notion, Figma, Google Optimize, StatSig AB Testing, Heap Analytics",
     },
     {
       id: cryptoRandomString({ length: 10 }),
