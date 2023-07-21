@@ -27,7 +27,7 @@ const ImageLink: FC<ImageLinkProps> = ({
         target="_blank"
         rel="noreferrer"
       >
-        <LinkImage src={imgSrc} alt="icon" />
+        <LinkImage src={imgSrc} alt={tooltip} />
       </LinkElement>
       {!isNarrow && (
         <Tooltip

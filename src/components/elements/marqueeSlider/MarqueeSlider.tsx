@@ -10,7 +10,7 @@ const MarqueeSlider = () => {
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      contentText: "Frontend language migrations",
+      contentText: "Language migrations",
     },
     {
       id: cryptoRandomString({ length: 10 }),
@@ -30,16 +30,20 @@ const MarqueeSlider = () => {
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      contentText: "Landing pages / CMS",
+      contentText: "Landing pages / Headless CMS",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      contentText: "Accessability standards",
+      contentText: "WCAG accessibility standards",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      contentText: "Developer onboarding documentation",
     },
   ];
 
   return (
-    <Marquee speed={20}>
+    <Marquee speed={20} pauseOnClick>
       <MarqueeContainer>
         {DevFocusPoints.map((focusPoint) => (
           <MarqueeFocusPoint key={focusPoint.id}>

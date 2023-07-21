@@ -39,7 +39,11 @@ const AboutContainer: FC<AboutContainerProps> = ({ isNarrow }) => {
 
   return (
     <AboutCard isNarrow={isNarrow}>
-      <AboutImage isNarrow={isNarrow} src={KrissyImage} alt="krissy" />
+      <AboutImage
+        isNarrow={isNarrow}
+        src={KrissyImage}
+        alt="picture of krissy"
+      />
       <AboutContentCard>
         {AboutInformation.map((aboutText, index) => (
           <div key={index}>

@@ -118,7 +118,7 @@ const ProjectContainer: FC = () => {
             <H4>Devices: {project.devices}</H4>
             <H4>{project.description}</H4>
           </ProjectText>
-          <ProjectImage src={project.imgSrc} alt="project" />
+          <ProjectImage src={project.imgSrc} alt={project.title} />
         </ProjectCard>
       ))}
     </ProjectContainerCard>

@@ -8,6 +8,7 @@ type MarqueeSliderProps = {
 export const MarqueeContainer = styled.div<MarqueeSliderProps>`
   display: flex;
   gap: 32px;
+  cursor: pointer;
 `;
 
 export const MarqueeFocusPoint = styled(H4)`

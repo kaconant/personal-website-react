@@ -22,7 +22,11 @@ const Contact = () => {
       />
       <ContactContent isNarrow={isNarrow}>
         <ContactContainer isNarrow={isNarrow} />
-        <ContactImage isNarrow={isNarrow} src={Tallulah} alt="krissy" />
+        <ContactImage
+          isNarrow={isNarrow}
+          src={Tallulah}
+          alt="picture of krissy"
+        />
       </ContactContent>
     </ContactPageContainer>
   );
