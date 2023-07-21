@@ -33,5 +33,5 @@ export const SectionHeader = styled(H2)`
 `;
 
 export const SectionContent = styled(H4)`
-  color: var(--grayscale6);
+  color: var(--black);
 `;

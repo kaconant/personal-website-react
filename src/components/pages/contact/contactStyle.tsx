@@ -20,11 +20,7 @@ export const ContactPageContainer = styled.div`
   width: 100%;
 `;
 
-export const ContactImage = styled.img<ContactPageProps>`
-  height: 100%;
-  max-height: ${({ isNarrow }) => (isNarrow ? "340px" : "340px")};
-  width: auto;
-  max-width: ${({ isNarrow }) => (isNarrow ? "340px" : "340px")};
+export const ContactImage = styled.img`
   border: 2px solid var(--white);
   border-radius: var(--standardBorderRadius);
 `;

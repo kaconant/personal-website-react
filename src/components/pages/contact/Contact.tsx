@@ -23,7 +23,8 @@ const Contact = () => {
       <ContactContent isNarrow={isNarrow}>
         <ContactContainer isNarrow={isNarrow} />
         <ContactImage
-          isNarrow={isNarrow}
+          width={340}
+          height={340}
           src={Tallulah}
           alt="picture of krissy"
         />

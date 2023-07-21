@@ -19,6 +19,7 @@ export const AboutCard = styled.div<AboutCardProps>`
 `;
 
 export const AboutImage = styled.img<AboutCardProps>`
+  aspect-ratio: auto 400 / 400;
   height: 100%;
   max-height: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
   width: auto;

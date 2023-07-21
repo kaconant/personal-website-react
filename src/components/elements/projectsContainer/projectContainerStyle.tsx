@@ -40,6 +40,7 @@ export const ProjectHeader = styled(H2)`
 `;
 
 export const ProjectImage = styled.img`
+  aspect-ratio: auto 1 /1;
   height: auto;
   width: 100%;
   background: var(--shell);

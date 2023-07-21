@@ -1,13 +1,18 @@
+import { lazy, Suspense } from "react";
 import { HomeContainer } from "./homeStyle";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 
 import PageHeader from "../../atoms/pageHeader/PageHeader";
 import AboutContainer from "../../elements/aboutContainer/AboutContainer";
 import DevExperienceContainer from "../../elements/devExperienceContainer/DevExperienceContainer";
-import MarqueeSlider from "../../elements/marqueeSlider/MarqueeSlider";
+
+const MarqueeSlider = lazy(
+  () => import("../../elements/marqueeSlider/MarqueeSlider")
+);
 
 const Home = () => {
   const isNarrow = useMediaQuery("(max-width: 900px)");
+  const renderLoader = () => <p>Loading</p>;
 
   return (
     <>
@@ -18,7 +23,9 @@ const Home = () => {
         />
         <MarqueeSlider />
         <AboutContainer isNarrow={isNarrow} />
-        <DevExperienceContainer isNarrow={isNarrow} />
+        <Suspense fallback={renderLoader()}>
+          <DevExperienceContainer isNarrow={isNarrow} />
+        </Suspense>
       </HomeContainer>
     </>
   );
