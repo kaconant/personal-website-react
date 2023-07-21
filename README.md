@@ -1,6 +1,6 @@
 # Krissy Conant - Personal Portfolio Website
 
-A basic portfolio that highlights my frontend development skills - built using [Create React App](https://github.com/facebook/create-react-app), [Typescript](https://www.typescriptlang.org/), and [Styled Components](https://styled-components.com/). Deployed on [Heroku](https://www.heroku.com/). 
+A basic portfolio that highlights my frontend development skills - built using [Create React App](https://github.com/facebook/create-react-app), [Typescript](https://www.typescriptlang.org/), and [Styled Components](https://styled-components.com/). Deployed on [Heroku](https://www.heroku.com/). Uses [WCAG Accessibility standards](https://www.w3.org/WAI/test-evaluate/preliminary).
 
 Todos:
 - Add some [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/) tests.
