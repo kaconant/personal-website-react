@@ -108,7 +108,10 @@ const ProjectContainer: FC = () => {
   ];
 
   return (
-    <ProjectContainerCard isNarrow={isNarrow}>
+    <ProjectContainerCard
+      isNarrow={isNarrow}
+      aria-label="Project Examples Section"
+    >
       {ProjectInformation.map((project) => (
         <ProjectCard key={project.id} isNarrow={isNarrow}>
           <ProjectText>

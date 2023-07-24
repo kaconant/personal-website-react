@@ -5,7 +5,7 @@ import useOutsideClick from "../../../hooks/useOutsideClick";
 import {
   DesktopSidebarContainer,
   SidebarWrapper,
-  SidebarHeader,
+  SidebarDesktopHeader,
   SidebarTop,
   SidebarToggleIcon,
   LinkContainer,
@@ -71,42 +71,40 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
   ];
 
   return (
-    <>
-      <DesktopSidebarContainer
-        ref={refWrapper}
-        extendSidebar={extendSidebar}
-        isNarrow={false}
-      >
-        <SidebarWrapper isNarrow={false}>
-          <SidebarTop>
-            <SidebarHeader>
-              <SidebarToggleIcon
-                src={HamburgerMenu}
-                alt="nav hamburger menu"
-                extendSidebar={extendSidebar}
-                onClick={() => setExtendSidebar((currState) => !currState)}
-              />
-            </SidebarHeader>
-            <SidebarList
+    <DesktopSidebarContainer
+      ref={refWrapper}
+      extendSidebar={extendSidebar}
+      isNarrow={false}
+    >
+      <SidebarWrapper isNarrow={false}>
+        <SidebarTop aria-label="Sidebar Desktop Route List">
+          <SidebarDesktopHeader>
+            <SidebarToggleIcon
+              src={HamburgerMenu}
+              alt="nav hamburger menu"
               extendSidebar={extendSidebar}
-              onClickLink={() => setExtendSidebar(false)}
+              onClick={() => setExtendSidebar((currState) => !currState)}
             />
-          </SidebarTop>
-          {!isContactPage && (
-            <LinkContainer>
-              {SidebarLinks.map((sidebarLink) => (
-                <ImageLink
-                  key={sidebarLink.id}
-                  href={sidebarLink.href}
-                  imgSrc={sidebarLink.imgSrc}
-                  tooltip={sidebarLink.tooltip}
-                />
-              ))}
-            </LinkContainer>
-          )}
-        </SidebarWrapper>
-      </DesktopSidebarContainer>
-    </>
+          </SidebarDesktopHeader>
+          <SidebarList
+            extendSidebar={extendSidebar}
+            onClickLink={() => setExtendSidebar(false)}
+          />
+        </SidebarTop>
+        {!isContactPage && (
+          <LinkContainer aria-label="Sidebar Link Icons">
+            {SidebarLinks.map((sidebarLink) => (
+              <ImageLink
+                key={sidebarLink.id}
+                href={sidebarLink.href}
+                imgSrc={sidebarLink.imgSrc}
+                tooltip={sidebarLink.tooltip}
+              />
+            ))}
+          </LinkContainer>
+        )}
+      </SidebarWrapper>
+    </DesktopSidebarContainer>
   );
 };
 

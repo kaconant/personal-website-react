@@ -5,7 +5,7 @@ type ProjectContainerProps = {
   isNarrow: boolean;
 };
 
-export const ProjectContainerCard = styled.div<ProjectContainerProps>`
+export const ProjectContainerCard = styled.section<ProjectContainerProps>`
   display: grid;
   grid-template-columns: ${({ isNarrow }) => (isNarrow ? "1fr" : "1fr 1fr")};
   gap: 24px;

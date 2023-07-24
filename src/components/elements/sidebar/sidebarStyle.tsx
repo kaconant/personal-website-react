@@ -6,7 +6,7 @@ interface SidebarProps {
   isNarrow?: boolean;
 }
 
-const SidebarContainer = styled.div<SidebarProps>`
+const SidebarContainer = styled.nav<SidebarProps>`
   display: flex;
   position: fixed;
   padding: ${({ isNarrow }) => (isNarrow ? "24px" : "40px")};
@@ -39,11 +39,15 @@ export const SidebarWrapper = styled.div<SidebarProps>`
   align-items: ${({ isNarrow }) => (isNarrow ? "center" : "none")};
 `;
 
-export const SidebarTop = styled.div``;
+export const SidebarTop = styled.section``;
 
-export const SidebarHeader = styled.div`
+export const SidebarDesktopHeader = styled.div`
   display: flex;
   margin-bottom: 16px;
+`;
+
+export const SidebarMobileHeader = styled(SidebarDesktopHeader)`
+  justify-content: center;
 `;
 
 export const SidebarToggleIcon = styled.img<SidebarProps>`
@@ -82,7 +86,7 @@ export const SidebarListItemName = styled(H3)<SidebarProps>`
   }
 `;
 
-export const PageComponent = styled.div<SidebarProps>`
+export const PageComponent = styled.main<SidebarProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,7 +117,7 @@ export const BackgroundSheet = styled.div`
   opacity: 1;
 `;
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

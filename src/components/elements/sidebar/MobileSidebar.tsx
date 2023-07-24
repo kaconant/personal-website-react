@@ -5,8 +5,9 @@ import HamburgerMenu from "../../../assets/icons/HamburgerMenu.svg";
 import {
   MobileSidebarContainer,
   SidebarWrapper,
-  SidebarHeader,
+  SidebarMobileHeader,
   SidebarToggleIcon,
+  SidebarTop,
 } from "./sidebarStyle";
 import useOutsideClick from "../../../hooks/useOutsideClick";
 
@@ -23,28 +24,28 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
   useOutsideClick(refWrapper, () => setExtendSidebar(false));
 
   return (
-    <>
-      <MobileSidebarContainer
-        ref={refWrapper}
-        extendSidebar={extendSidebar}
-        isNarrow={true}
-      >
-        <SidebarWrapper isNarrow={true}>
-          <SidebarHeader>
+    <MobileSidebarContainer
+      ref={refWrapper}
+      extendSidebar={extendSidebar}
+      isNarrow={true}
+    >
+      <SidebarWrapper isNarrow={true}>
+        <SidebarTop aria-label="Sidebar Mobile Route List">
+          <SidebarMobileHeader>
             <SidebarToggleIcon
               src={HamburgerMenu}
               alt="nav hamburger menu"
               extendSidebar={extendSidebar}
               onClick={() => setExtendSidebar((currState) => !currState)}
             />
-          </SidebarHeader>
+          </SidebarMobileHeader>
           <SidebarList
             extendSidebar={extendSidebar}
             onClickLink={() => setExtendSidebar(false)}
           />
-        </SidebarWrapper>
-      </MobileSidebarContainer>
-    </>
+        </SidebarTop>
+      </SidebarWrapper>
+    </MobileSidebarContainer>
   );
 };
 

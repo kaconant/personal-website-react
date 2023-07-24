@@ -4,7 +4,7 @@ type ContactPageProps = {
   isNarrow?: boolean;
 };
 
-export const ContactContent = styled.div<ContactPageProps>`
+export const ContactContent = styled.section<ContactPageProps>`
   display: flex;
   flex-direction: ${({ isNarrow }) => (isNarrow ? "column" : "row")};
   gap: ${({ isNarrow }) => (isNarrow ? "24px" : "40px")};
@@ -12,7 +12,7 @@ export const ContactContent = styled.div<ContactPageProps>`
   align-items: center;
 `;
 
-export const ContactPageContainer = styled.div`
+export const ContactPageContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

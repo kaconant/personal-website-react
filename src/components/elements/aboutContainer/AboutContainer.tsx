@@ -38,7 +38,7 @@ const AboutContainer: FC<AboutContainerProps> = ({ isNarrow }) => {
   ];
 
   return (
-    <AboutCard isNarrow={isNarrow}>
+    <AboutCard isNarrow={isNarrow} aria-label="About Me Section">
       <AboutImage
         isNarrow={isNarrow}
         src={KrissyImage}

@@ -15,19 +15,17 @@ const Home = () => {
   const renderLoader = () => <p>Loading</p>;
 
   return (
-    <>
-      <HomeContainer>
-        <PageHeader
-          headerText="hi, i'm Krissy"
-          subheaderText="an ATL-based senior frontend software developer"
-        />
-        <MarqueeSlider />
-        <AboutContainer isNarrow={isNarrow} />
-        <Suspense fallback={renderLoader()}>
-          <DevExperienceContainer isNarrow={isNarrow} />
-        </Suspense>
-      </HomeContainer>
-    </>
+    <HomeContainer aria-label="Home Page">
+      <PageHeader
+        headerText="hi, i'm Krissy"
+        subheaderText="an ATL-based senior frontend software developer"
+      />
+      <MarqueeSlider />
+      <AboutContainer isNarrow={isNarrow} />
+      <Suspense fallback={renderLoader()}>
+        <DevExperienceContainer isNarrow={isNarrow} />
+      </Suspense>
+    </HomeContainer>
   );
 };
 

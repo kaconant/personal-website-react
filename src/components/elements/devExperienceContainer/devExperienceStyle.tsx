@@ -5,6 +5,12 @@ type DevExpertiseProps = {
   isNarrow: boolean;
 };
 
+export const DevExperienceSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+`;
+
 export const DevExpertiseCard = styled.div<DevExpertiseProps>`
   display: grid;
   grid-template-columns: ${({ isNarrow }) => (isNarrow ? "1fr" : "1fr 1fr")};

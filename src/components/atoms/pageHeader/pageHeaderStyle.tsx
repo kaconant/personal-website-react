@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 import vaporWaveBackground from "../../../assets/backgrounds/vaporWaveBackground.jpg";
 import { H1, H2 } from "../../textElements";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   text-align: center;

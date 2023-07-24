@@ -5,7 +5,7 @@ type ContactCardProps = {
   isNarrow?: boolean;
 };
 
-export const ContactCard = styled.div<ContactCardProps>`
+export const ContactCard = styled.section<ContactCardProps>`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -19,10 +19,14 @@ export const ContactCard = styled.div<ContactCardProps>`
   min-width: ${({ isNarrow }) => (isNarrow ? "100%" : "340px")};
 `;
 
-export const ContactLinks = styled.div`
+export const ContactLinks = styled.ol`
   display: flex;
   flex-direction: row;
   gap: 40px;
+`;
+
+export const ImageLinkContainer = styled.li`
+  display: flex;
 `;
 
 export const ContactInfo = styled(H3)`

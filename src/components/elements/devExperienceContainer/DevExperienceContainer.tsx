@@ -1,6 +1,7 @@
 import { FC } from "react";
 import PageHeader from "../../atoms/pageHeader/PageHeader";
 import {
+  DevExperienceSection,
   DevExpertiseCard,
   Section,
   SectionContent,
@@ -65,7 +66,9 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
   ];
 
   return (
-    <>
+    <DevExperienceSection
+      aria-label="Development Experience Section"
+    >
       <PageHeader
         headerText="myspace top 8 list"
         subheaderText="with my professional experience"
@@ -78,7 +81,7 @@ const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
           </Section>
         ))}
       </DevExpertiseCard>
-    </>
+    </DevExperienceSection>
   );
 };
 

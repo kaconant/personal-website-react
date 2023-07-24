@@ -15,12 +15,15 @@ const Contact = () => {
   const isNarrow = useMediaQuery("(max-width: 900px)");
 
   return (
-    <ContactPageContainer>
+    <ContactPageContainer aria-label="Contact Page">
       <PageHeader
         headerText="contact me"
         subheaderText="for work or tallulah photos - dealer's choice"
       />
-      <ContactContent isNarrow={isNarrow}>
+      <ContactContent
+        isNarrow={isNarrow}
+        aria-label="Contact Information Section"
+      >
         <ContactContainer isNarrow={isNarrow} />
         <ContactImage
           width={340}

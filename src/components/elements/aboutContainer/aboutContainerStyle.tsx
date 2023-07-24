@@ -5,7 +5,7 @@ type AboutCardProps = {
   isNarrow: boolean;
 };
 
-export const AboutCard = styled.div<AboutCardProps>`
+export const AboutCard = styled.section<AboutCardProps>`
   display: flex;
   flex-direction: ${({ isNarrow }) => (isNarrow ? "column" : "row")};
   gap: 24px;

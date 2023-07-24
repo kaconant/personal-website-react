@@ -43,15 +43,17 @@ const MarqueeSlider = () => {
   ];
 
   return (
-    <Marquee speed={20} pauseOnClick>
-      <MarqueeContainer>
-        {DevFocusPoints.map((focusPoint) => (
-          <MarqueeFocusPoint key={focusPoint.id}>
-            {focusPoint.contentText}
-          </MarqueeFocusPoint>
-        ))}
-      </MarqueeContainer>
-    </Marquee>
+    <section aria-label="Marquee Scroller">
+      <Marquee speed={20} pauseOnClick>
+        <MarqueeContainer>
+          {DevFocusPoints.map((focusPoint) => (
+            <MarqueeFocusPoint key={focusPoint.id}>
+              {focusPoint.contentText}
+            </MarqueeFocusPoint>
+          ))}
+        </MarqueeContainer>
+      </Marquee>
+    </section>
   );
 };
 

@@ -1,5 +1,9 @@
 import { FC } from "react";
-import { ContactCard, ContactLinks } from "./contactContainerStyle";
+import {
+  ContactCard,
+  ContactLinks,
+  ImageLinkContainer,
+} from "./contactContainerStyle";
 import cryptoRandomString from "crypto-random-string";
 
 import Link from "../../atoms/link/Link";
@@ -44,15 +48,16 @@ const ContactContainer: FC<ContactContainerProps> = ({ isNarrow }) => {
   ];
 
   return (
-    <ContactCard isNarrow={isNarrow}>
+    <ContactCard isNarrow={isNarrow} aria-label="Contact Link Section">
       <ContactLinks>
         {ContactImageLinks.map((contactImageLink) => (
-          <ImageLink
-            key={contactImageLink.id}
-            href={contactImageLink.href}
-            imgSrc={contactImageLink.imgSrc}
-            tooltip={contactImageLink.tooltip}
-          />
+          <ImageLinkContainer key={contactImageLink.id}>
+            <ImageLink
+              href={contactImageLink.href}
+              imgSrc={contactImageLink.imgSrc}
+              tooltip={contactImageLink.tooltip}
+            />
+          </ImageLinkContainer>
         ))}
       </ContactLinks>
       <Link href={Resume} theme="button" linkContent="Check out my resume" />

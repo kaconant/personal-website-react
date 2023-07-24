@@ -14,19 +14,17 @@ const Layout = ({ children }: { children: JSX.Element }) => {
 
   return (
     <>
-      <>
-        {isNarrow ? (
-          <MobileSidebar
-            extendSidebar={extendSidebar}
-            setExtendSidebar={setExtendSidebar}
-          />
-        ) : (
-          <DesktopSidebar
-            extendSidebar={extendSidebar}
-            setExtendSidebar={setExtendSidebar}
-          />
-        )}
-      </>
+      {isNarrow ? (
+        <MobileSidebar
+          extendSidebar={extendSidebar}
+          setExtendSidebar={setExtendSidebar}
+        />
+      ) : (
+        <DesktopSidebar
+          extendSidebar={extendSidebar}
+          setExtendSidebar={setExtendSidebar}
+        />
+      )}
       <PageComponent isNarrow={isNarrow}>{children}</PageComponent>
       {extendSidebar && <BackgroundSheet />}
     </>
