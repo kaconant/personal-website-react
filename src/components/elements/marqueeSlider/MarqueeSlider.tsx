@@ -6,7 +6,7 @@ const MarqueeSlider = () => {
   const DevFocusPoints = [
     {
       id: cryptoRandomString({ length: 10 }),
-      contentText: "Recommerce / Ecommerce",
+      contentText: "Recommerce & Ecommerce",
     },
     {
       id: cryptoRandomString({ length: 10 }),
@@ -14,15 +14,19 @@ const MarqueeSlider = () => {
     },
     {
       id: cryptoRandomString({ length: 10 }),
+      contentText: "Responsive design systems",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
+      contentText: "Component libraries",
+    },
+    {
+      id: cryptoRandomString({ length: 10 }),
       contentText: "Internal tools",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      contentText: "CRM / Dashboards",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      contentText: "Design systems",
+      contentText: "CRM & Dashboards",
     },
     {
       id: cryptoRandomString({ length: 10 }),
@@ -30,7 +34,7 @@ const MarqueeSlider = () => {
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      contentText: "Landing pages / Headless CMS",
+      contentText: "Landing pages & Headless CMS",
     },
     {
       id: cryptoRandomString({ length: 10 }),
