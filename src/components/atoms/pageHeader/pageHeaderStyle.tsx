@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import vaporWaveBackground from "../../../assets/backgrounds/vaporWaveBackground.png";
+import vaporWaveBackground from "../../../assets/backgrounds/vaporWaveBackground.jpg";
 import { H1, H2 } from "../../textElements";
 
 export const HeaderContainer = styled.div`

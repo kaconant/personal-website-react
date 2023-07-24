@@ -1,6 +1,6 @@
 import useMediaQuery from "../../../hooks/useMediaQuery";
 
-import Tallulah from "../../../assets/photos/self/Tallulah.png";
+import Tallulah from "../../../assets/photos/self/Tallulah.jpg";
 
 import PageHeader from "../../atoms/pageHeader/PageHeader";
 import ContactContainer from "../../elements/contactContainer/ContactContainer";

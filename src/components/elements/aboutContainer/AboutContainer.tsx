@@ -9,7 +9,7 @@ import {
 
 import cryptoRandomString from "crypto-random-string";
 
-import KrissyImage from "../../../assets/photos/self/KrissyRainbow.png";
+import KrissyImage from "../../../assets/photos/self/KrissyRainbow.jpg";
 
 type AboutContainerProps = {
   isNarrow: boolean;
