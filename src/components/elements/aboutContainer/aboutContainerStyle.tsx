@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { H3, H5 } from "../../textElements";
+import { H3Bold, P1 } from "../../textElements";
 
 type AboutCardProps = {
   isNarrow: boolean;
@@ -34,7 +34,7 @@ export const AboutContentCard = styled.div`
   gap: 16px;
 `;
 
-export const AboutHeader = styled(H3)<AboutCardProps>`
+export const AboutHeader = styled(H3Bold)<AboutCardProps>`
   text-align: ${({ isNarrow }) => (isNarrow ? "center" : "left")};
 
   @media only screen and (max-width: 768px) {
@@ -44,7 +44,7 @@ export const AboutHeader = styled(H3)<AboutCardProps>`
   }
 `;
 
-export const AboutText = styled(H5)<AboutCardProps>`
+export const AboutText = styled(P1)<AboutCardProps>`
   text-align: ${({ isNarrow }) => (isNarrow ? "center" : "left")};
 
   @media only screen and (max-width: 768px) {

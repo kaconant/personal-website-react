@@ -5,6 +5,7 @@ import {
   ProjectImage,
   ProjectText,
   ProjectHeader,
+  ProjectLine,
 } from "./projectContainerStyle";
 
 import FieldEdge from "../../../assets/photos/projects/FieldEdge.png";
@@ -16,7 +17,7 @@ import MyBlendology from "../../../assets/photos/projects/MyBlendology.png";
 import RekoDesignSystem from "../../../assets/photos/projects/RekoDesignSystem.png";
 import ProductReceiving from "../../../assets/photos/projects/ProductReceiving.png";
 
-import { H4 } from "../../textElements";
+import { P1, P1Bold } from "../../textElements";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 import cryptoRandomString from "crypto-random-string";
 
@@ -116,10 +117,19 @@ const ProjectContainer: FC = () => {
         <ProjectCard key={project.id} isNarrow={isNarrow}>
           <ProjectText>
             <ProjectHeader>{project.title}</ProjectHeader>
-            <H4>Category: {project.category}</H4>
-            <H4>Company: {project.company}</H4>
-            <H4>Devices: {project.devices}</H4>
-            <H4>{project.description}</H4>
+            <ProjectLine>
+              <P1Bold>Category:</P1Bold>
+              <P1>{project.category}</P1>
+            </ProjectLine>
+            <ProjectLine>
+              <P1Bold>Company:</P1Bold>
+              <P1>{project.company}</P1>
+            </ProjectLine>
+            <ProjectLine>
+              <P1Bold>Devices: </P1Bold>
+              <P1>{project.devices}</P1>
+            </ProjectLine>
+            <P1>{project.description}</P1>
           </ProjectText>
           <ProjectImage src={project.imgSrc} alt={project.title} />
         </ProjectCard>

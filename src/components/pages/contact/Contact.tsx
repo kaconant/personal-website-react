@@ -25,12 +25,7 @@ const Contact = () => {
         aria-label="Contact Information Section"
       >
         <ContactContainer isNarrow={isNarrow} />
-        <ContactImage
-          width={340}
-          height={340}
-          src={Tallulah}
-          alt="picture of krissy"
-        />
+        <ContactImage src={Tallulah} alt="picture of krissy" />
       </ContactContent>
     </ContactPageContainer>
   );

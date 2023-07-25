@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { H2, H4 } from "../../textElements";
+import { H2, P1 } from "../../textElements";
 
 type DevExpertiseProps = {
   isNarrow: boolean;
@@ -38,6 +38,6 @@ export const SectionHeader = styled(H2)`
   }
 `;
 
-export const SectionContent = styled(H4)`
+export const SectionContent = styled(P1)`
   color: var(--black);
 `;

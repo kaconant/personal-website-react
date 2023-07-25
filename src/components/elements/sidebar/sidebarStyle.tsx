@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { H3 } from "../../textElements";
+import { H3Bold } from "../../textElements";
 
 interface SidebarProps {
   extendSidebar?: boolean;
@@ -77,7 +77,7 @@ export const SidebarListItemWrapper = styled.div`
   color: var(--black);
 `;
 
-export const SidebarListItemName = styled(H3)<SidebarProps>`
+export const SidebarListItemName = styled(H3Bold)<SidebarProps>`
   margin-bottom: 0;
   color: var(--black);
 

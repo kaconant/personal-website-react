@@ -40,10 +40,16 @@ export const ProjectHeader = styled(H2)`
 `;
 
 export const ProjectImage = styled.img`
-  aspect-ratio: auto 1 /1;
+  aspect-ratio: auto 1 / 1;
   height: auto;
   width: 100%;
   background: var(--shell);
   border: 1px solid var(--white);
   border-radius: var(--standardBorderRadius);
+`;
+
+export const ProjectLine = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 `;

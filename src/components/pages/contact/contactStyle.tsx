@@ -21,6 +21,11 @@ export const ContactPageContainer = styled.section`
 `;
 
 export const ContactImage = styled.img`
+  aspect-ratio: auto 340 / 340;
+  height: 100%;
+  max-height: 340px;
+  width: auto;
+  max-width: 340px;
   border: 2px solid var(--white);
   border-radius: var(--standardBorderRadius);
 `;
