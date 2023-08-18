@@ -13,7 +13,7 @@ const Home = () => {
     <HomeContainer aria-label="Home Page">
       <PageHeader
         headerText="hi, i'm Krissy"
-        subheaderText="an ATL-based senior frontend software developer"
+        subheaderText="an ATL-based frontend software developer"
       />
       <MarqueeSlider />
       <AboutContainer isNarrow={isNarrow} />
