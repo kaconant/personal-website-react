@@ -6,9 +6,9 @@ import {
 } from "./contactContainerStyle";
 import cryptoRandomString from "crypto-random-string";
 
-import Link from "@/components/atoms/Link/Link";
+import Link from "@/components/atoms/Link";
 import Resume from "@/assets/pdf/KrissyConantResume2023.pdf";
-import ImageLink from "@/components/atoms/ImageLink/ImageLink";
+import ImageLink from "@/components/atoms/ImageLink";
 
 import LinkedIn from "@/assets/icons/linkedin.svg";
 import GitHub from "@/assets/icons/github.svg";

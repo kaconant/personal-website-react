@@ -1,12 +1,12 @@
 import { FC } from "react";
 import {
-  ProjectContainerCard,
+  ProjectsContainerCard,
   ProjectCard,
   ProjectImage,
   ProjectText,
   ProjectHeader,
   ProjectLine,
-} from "./projectContainerStyle";
+} from "./projectsContainerStyle";
 
 import FieldEdge from "@/assets/photos/projects/FieldEdge.png";
 import ConditionAssessment from "@/assets/photos/projects/ConditionAssessment.png";
@@ -21,7 +21,7 @@ import { P1, P1Bold } from "../../Typography";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import cryptoRandomString from "crypto-random-string";
 
-const ProjectContainer: FC = () => {
+const ProjectsContainer: FC = () => {
   const isNarrow = useMediaQuery("(max-width: 768px)");
 
   const ProjectInformation = [
@@ -109,7 +109,7 @@ const ProjectContainer: FC = () => {
   ];
 
   return (
-    <ProjectContainerCard
+    <ProjectsContainerCard
       isNarrow={isNarrow}
       aria-label="Project Examples Section"
     >
@@ -134,8 +134,8 @@ const ProjectContainer: FC = () => {
           <ProjectImage src={project.imgSrc} alt={project.title} />
         </ProjectCard>
       ))}
-    </ProjectContainerCard>
+    </ProjectsContainerCard>
   );
 };
 
-export default ProjectContainer;
+export default ProjectsContainer;

@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { H2 } from "../../Typography";
 
-type ProjectContainerProps = {
+type ProjectsContainerProps = {
   isNarrow: boolean;
 };
 
-export const ProjectContainerCard = styled.section<ProjectContainerProps>`
+export const ProjectsContainerCard = styled.section<ProjectsContainerProps>`
   display: grid;
   grid-template-columns: ${({ isNarrow }) => (isNarrow ? "1fr" : "1fr 1fr")};
   gap: 24px;
 `;
 
-export const ProjectCard = styled.div<ProjectContainerProps>`
+export const ProjectCard = styled.div<ProjectsContainerProps>`
   display: flex;
   flex-direction: column;
   gap: 24px;

@@ -19,7 +19,7 @@ import File from "@/assets/icons/file.svg";
 import Folder from "@/assets/icons/folder.svg";
 
 import SidebarList from "./SidebarList";
-import ImageLink from "@/components/atoms/ImageLink/ImageLink";
+import ImageLink from "@/components/atoms/ImageLink";
 import cryptoRandomString from "crypto-random-string";
 
 interface DesktopSidebarProps {

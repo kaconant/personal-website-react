@@ -3,7 +3,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import Tallulah from "@/assets/photos/self/Tallulah.jpg";
 
 import PageHeader from "@/components/atoms/PageHeader";
-import ContactContainer from "@/components/blocks/ContactContainer/ContactContainer";
+import ContactContainer from "@/components/blocks/ContactContainer";
 
 import {
   ContactContent,
