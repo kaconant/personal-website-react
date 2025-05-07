@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { HeaderContainer, HeaderText, SubheaderText } from "./pageHeaderStyle";
 
 type PageHeaderProps = {

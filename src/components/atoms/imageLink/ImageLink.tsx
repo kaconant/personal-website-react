@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { LinkElement, LinkImage } from "./linkStyle";
 import { PlacesType, Tooltip } from "react-tooltip";
-import useMediaQuery from "../../../hooks/useMediaQuery";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 type ImageLinkProps = {
   href: string;

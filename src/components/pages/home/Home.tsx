@@ -1,10 +1,10 @@
 import { HomeContainer } from "./homeStyle";
-import useMediaQuery from "../../../hooks/useMediaQuery";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
-import PageHeader from "../../atoms/pageHeader/PageHeader";
-import AboutContainer from "../../elements/aboutContainer/AboutContainer";
-import DevExperienceContainer from "../../elements/devExperienceContainer/DevExperienceContainer";
-import MarqueeSlider from "../../elements/marqueeSlider/MarqueeSlider";
+import PageHeader from "@/components/atoms/PageHeader/PageHeader";
+import AboutContainer from "@/components/blocks/AboutContainer/AboutContainer";
+import DevExperienceContainer from "@/components/blocks/DevExperienceContainer/DevExperienceContainer";
+import MarqueeSlider from "@/components/blocks/MarqueeSlider/MarqueeSlider";
 
 const Home = () => {
   const isNarrow = useMediaQuery("(max-width: 900px)");
@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <HomeContainer aria-label="Home Page">
       <PageHeader
-        headerText="hi, i'm Krissy"
-        subheaderText="an ATL-based frontend software developer"
+        headerText="hiya, i'm Krissy"
+        subheaderText="Senior Frontend Engineer - ATL"
       />
       <MarqueeSlider />
       <AboutContainer isNarrow={isNarrow} />

@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/atoms/*": ["src/components/atoms/*"],
+      "@/blocks/*": ["src/components/blocks/*"],
+      "@/pages/*": ["src/components/pages/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/assets/*": ["src/assets/*"]
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

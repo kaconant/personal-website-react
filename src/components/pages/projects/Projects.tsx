@@ -1,5 +1,5 @@
-import PageHeader from "../../atoms/pageHeader/PageHeader";
-import ProjectContainer from "../../elements/projectsContainer/ProjectContainer";
+import PageHeader from "@/components/atoms/PageHeader/PageHeader";
+import ProjectContainer from "@/components/blocks/ProjectsContainer/ProjectContainer";
 import { ProjectsSection } from "./projectsStyle";
 
 const Projects = () => {

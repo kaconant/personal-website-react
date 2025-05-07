@@ -1,9 +1,9 @@
-import useMediaQuery from "../../../hooks/useMediaQuery";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
-import Tallulah from "../../../assets/photos/self/Tallulah.jpg";
+import Tallulah from "@/assets/photos/self/Tallulah.jpg";
 
-import PageHeader from "../../atoms/pageHeader/PageHeader";
-import ContactContainer from "../../elements/contactContainer/ContactContainer";
+import PageHeader from "@/components/atoms/PageHeader/PageHeader";
+import ContactContainer from "@/components/blocks/ContactContainer/ContactContainer";
 
 import {
   ContactContent,
