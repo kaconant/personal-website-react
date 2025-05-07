@@ -1,4 +1,4 @@
-import PageHeader from "@/components/atoms/PageHeader/PageHeader";
+import PageHeader from "@/components/atoms/PageHeader";
 
 import { NotFoundContainer } from "./notFoundStyle";
 

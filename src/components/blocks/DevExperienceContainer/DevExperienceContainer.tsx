@@ -1,5 +1,5 @@
 import { FC } from "react";
-import PageHeader from "@/components/atoms/PageHeader/PageHeader";
+import PageHeader from "@/components/atoms/PageHeader";
 import {
   DevExperienceSection,
   DevExpertiseCard,
