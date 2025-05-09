@@ -8,12 +8,12 @@ type AboutCardProps = {
 export const AboutCard = styled.section<AboutCardProps>`
   display: flex;
   flex-direction: ${({ isNarrow }) => (isNarrow ? "column" : "row")};
-  gap: 24px;
+  gap: 48px;
   padding: 20px;
-  background: var(--grayscale2);
-  border: 3px solid var(--grayscale4);
+  background: var(--primaryColor);
+  border: 2px solid var(--accentGreen);
   border-radius: var(--standardBorderRadius);
-  width: ${({ isNarrow }) => (isNarrow ? "100%" : "fit-content")};
+  width: ${({ isNarrow }) => (isNarrow ? "100%" : "80%")};
   align-items: center;
   align-self: center;
 `;
@@ -24,7 +24,7 @@ export const AboutImage = styled.img<AboutCardProps>`
   max-height: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
   width: auto;
   max-width: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
-  border: 2px solid var(--white);
+  border: 2px solid var(--accentGreen);
   border-radius: var(--standardBorderRadius);
 `;
 
@@ -48,8 +48,6 @@ export const AboutText = styled(P1)<AboutCardProps>`
   text-align: ${({ isNarrow }) => (isNarrow ? "center" : "left")};
 
   @media only screen and (max-width: 768px) {
-    font-size: 16px;
-    line-height: 22.4px;
     margin-bottom: 16px;
   }
 `;

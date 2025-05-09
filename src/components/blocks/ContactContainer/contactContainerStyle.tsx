@@ -8,10 +8,10 @@ type ContactCardProps = {
 export const ContactCard = styled.section<ContactCardProps>`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
   padding: 24px;
-  background: var(--grayscale2);
-  border: 3px solid var(--grayscale4);
+  background: var(--white);
+  border: 2px solid var(--accentGreen);
   border-radius: var(--standardBorderRadius);
   align-self: center;
   align-items: center;
@@ -40,7 +40,7 @@ export const LinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 48px;
   width: 100%;
   bottom: 0px;
   margin: 0;

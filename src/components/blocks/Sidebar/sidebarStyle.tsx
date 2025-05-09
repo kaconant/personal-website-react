@@ -1,36 +1,46 @@
 import styled from "styled-components";
 import { H3Bold } from "../../Typography";
+import { HTMLAttributes } from "react";
 
-interface SidebarProps {
-  extendSidebar?: boolean;
+type MainLayoutProps = {
   isNarrow?: boolean;
-}
+  extendSidebar?: boolean;
+} & HTMLAttributes<HTMLElement>;
 
-const SidebarContainer = styled.nav<SidebarProps>`
+const SidebarContainer = styled.nav<MainLayoutProps>`
   display: flex;
   position: fixed;
   padding: ${({ isNarrow }) => (isNarrow ? "24px" : "40px")};
-  background-color: var(--grayscale2);
-  border: 2px solid var(--grayscale4);
-  transition: width 350ms ease, height 350ms ease;
+  background-color: var(--accentPurple);
+  transition:
+    width 350ms ease,
+    height 350ms ease;
   overflow-x: hidden;
   z-index: var(--topZIndex);
 `;
 
-export const DesktopSidebarContainer = styled(SidebarContainer)<SidebarProps>`
+export const DesktopSidebarContainer = styled(
+  SidebarContainer,
+)<MainLayoutProps>`
   width: ${({ extendSidebar }) =>
     extendSidebar ? "165px" : "var(--desktopClosedSidebarWidth)"};
   height: 100%;
+  border: 2px solid var(--accentDarkPurple);
+  border-top: none;
+  border-bottom: none;
 `;
 
-export const MobileSidebarContainer = styled(SidebarContainer)<SidebarProps>`
+export const MobileSidebarContainer = styled(SidebarContainer)<MainLayoutProps>`
   width: 100vw;
   height: ${({ extendSidebar }) =>
     extendSidebar ? "280px" : "var(--mobileClosedSidebarWidth)"};
   overflow-y: hidden;
+  border: 2px solid var(--accentDarkPurple);
+  border-left: none;
+  border-right: none;
 `;
 
-export const SidebarWrapper = styled.div<SidebarProps>`
+export const SidebarWrapper = styled.div<MainLayoutProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,18 +60,18 @@ export const SidebarMobileHeader = styled(SidebarDesktopHeader)`
   justify-content: center;
 `;
 
-export const SidebarToggleIcon = styled.img<SidebarProps>`
+export const SidebarToggleIcon = styled.img<MainLayoutProps>`
   cursor: pointer;
   width: 24px;
   height: 24px;
 `;
 
-export const SidebarListContainer = styled.ul<SidebarProps>`
+export const SidebarListContainer = styled.ul<MainLayoutProps>`
   list-style: none;
   display: ${({ extendSidebar }) => (extendSidebar ? "block" : "none")};
 `;
 
-export const SidebarListItem = styled.li<SidebarProps>`
+export const SidebarListItem = styled.li<MainLayoutProps>`
   display: flex;
   justify-content: ${({ isNarrow }) => (isNarrow ? "center" : "none")};
   margin-top: 8px;
@@ -77,7 +87,7 @@ export const SidebarListItemWrapper = styled.div`
   color: var(--black);
 `;
 
-export const SidebarListItemName = styled(H3Bold)<SidebarProps>`
+export const SidebarListItemName = styled(H3Bold)<MainLayoutProps>`
   margin-bottom: 0;
   color: var(--black);
 
@@ -86,13 +96,13 @@ export const SidebarListItemName = styled(H3Bold)<SidebarProps>`
   }
 `;
 
-export const PageComponent = styled.main<SidebarProps>`
+export const PageComponent = styled.main<MainLayoutProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: ${({ isNarrow }) =>
     isNarrow ? "0" : "var(--desktopClosedSidebarWidth)"};
-  background-color: var(--lightPurple);
+  background-color: var(--secondaryColor);
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 40px;
@@ -101,6 +111,11 @@ export const PageComponent = styled.main<SidebarProps>`
       ? "var(--mobilePaddingTopHeight)"
       : "var(--desktopPaddingTopHeight)"};
   min-height: 100vh;
+
+  &:focus {
+    outline: 3px solid #ffa500; // Add a visible outline to confirm focus
+    outline-offset: 4px;
+  }
 `;
 
 export const BackgroundSheet = styled.div`
@@ -121,8 +136,16 @@ export const LinkContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 56px;
   width: 100%;
   bottom: 0px;
   margin: 0;
+`;
+
+export const ScrollContainer = styled.div<MainLayoutProps>`
+  height: 100vh;
+  overflow-y: auto;
+  margin-left: ${({ isNarrow }) => (isNarrow ? "0" : "0")};
+  background-color: var(--secondaryColor);
+  padding-top: ${({ isNarrow }) => (isNarrow ? "0" : "0")};
 `;

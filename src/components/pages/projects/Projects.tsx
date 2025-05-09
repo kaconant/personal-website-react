@@ -1,4 +1,4 @@
-import PageHeader from "@/components/atoms/PageHeader";
+import PageHeader from "@/components/atoms/HeaderCard";
 import ProjectContainer from "@/components/blocks/ProjectsContainer";
 import { ProjectsSection } from "./projectsStyle";
 

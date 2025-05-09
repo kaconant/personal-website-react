@@ -22,7 +22,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import cryptoRandomString from "crypto-random-string";
 
 const ProjectsContainer: FC = () => {
-  const isNarrow = useMediaQuery("(max-width: 768px)");
+  const isNarrow = useMediaQuery("(max-width: 1068px)");
 
   const ProjectInformation = [
     {

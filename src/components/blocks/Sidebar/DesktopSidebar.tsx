@@ -22,10 +22,50 @@ import SidebarList from "./SidebarList";
 import ImageLink from "@/components/atoms/ImageLink";
 import cryptoRandomString from "crypto-random-string";
 
-interface DesktopSidebarProps {
+type DesktopSidebarProps = {
   extendSidebar: boolean;
   setExtendSidebar: (value: React.SetStateAction<boolean>) => void;
-}
+};
+
+type SidebarLinkType = {
+  id: string;
+  href: string;
+  imgSrc: string;
+  tooltip: string;
+};
+
+const SidebarLinks: SidebarLinkType[] = [
+  {
+    id: cryptoRandomString({ length: 10 }),
+    href: "https://www.linkedin.com/in/krissy-conant/",
+    imgSrc: LinkedIn,
+    tooltip: "LinkedIn",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    href: "https://github.com/kaconant",
+    imgSrc: GitHub,
+    tooltip: "GitHub",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    href: "mailto:krissyconant@gmail.com",
+    imgSrc: Email,
+    tooltip: "Email",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    href: Resume,
+    imgSrc: File,
+    tooltip: "Resume",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    href: "https://krissy-conant.notion.site/00cfc96784af43c1931cf3341e21ef7f?v=712e36f87c45461581e7f60da2837c90&pvs=4",
+    imgSrc: Folder,
+    tooltip: "Wiki",
+  },
+];
 
 const DesktopSidebar: FC<DesktopSidebarProps> = ({
   extendSidebar,
@@ -36,39 +76,6 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
 
   let routeLocation = useLocation();
   const isContactPage = routeLocation.pathname === "/contact";
-
-  const SidebarLinks = [
-    {
-      id: cryptoRandomString({ length: 10 }),
-      href: "https://www.linkedin.com/in/krissy-conant/",
-      imgSrc: LinkedIn,
-      tooltip: "LinkedIn",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      href: "https://github.com/kaconant",
-      imgSrc: GitHub,
-      tooltip: "GitHub",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      href: "mailto:krissyconant@gmail.com",
-      imgSrc: Email,
-      tooltip: "Email",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      href: Resume,
-      imgSrc: File,
-      tooltip: "Resume",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      href: "https://krissy-conant.notion.site/00cfc96784af43c1931cf3341e21ef7f?v=712e36f87c45461581e7f60da2837c90&pvs=4",
-      imgSrc: Folder,
-      tooltip: "Wiki",
-    },
-  ];
 
   return (
     <DesktopSidebarContainer
@@ -83,6 +90,7 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({
               src={HamburgerMenu}
               alt="nav hamburger menu"
               extendSidebar={extendSidebar}
+              isNarrow={false}
               onClick={() => setExtendSidebar((currState) => !currState)}
             />
           </SidebarDesktopHeader>

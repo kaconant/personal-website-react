@@ -1,5 +1,5 @@
 import { FC } from "react";
-import PageHeader from "@/components/atoms/PageHeader";
+import PageHeader from "@/components/atoms/HeaderCard";
 import {
   DevExperienceSection,
   DevExpertiseCard,
@@ -14,62 +14,69 @@ type DevExperienceProps = {
   isNarrow: boolean;
 };
 
-const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
-  const DevExperience = [
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Languages & Frameworks",
-      contentText:
-        "JavaScript, TypeScript, React, Vue 2 / 3, Vuex, Nodejs, Nextjs, Knockout, C#",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Libraries",
-      contentText:
-        "Apollo GraphQL, React Query, Jest, React Testing Library, Axios",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "CSS skills",
-      contentText:
-        "Styled Components, Tailwind, Bootstrap, Flexbox, Grid, SCSS",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Developer tools",
-      contentText:
-        "Github, Heroku, Storyblok, Storybook, Sentry, Postman, Visual Studio Code",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Product & design tools",
-      contentText:
-        "Jira, Notion, Figma, Google Optimize, StatSig AB Testing, Heap Analytics",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Favorite extensions",
-      contentText:
-        "Lighthouse, A11ygator, Wappalyzer, React DevTools, Apollo DevTools",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Project management styles",
-      contentText: "Agile, Scrum, Kanban, Waterfall",
-    },
-    {
-      id: cryptoRandomString({ length: 10 }),
-      headerText: "Tech company experience",
-      contentText:
-        "Customer success, Project management, Inbound Marketing, Event planning",
-    },
-  ];
+type DevExperienceType = {
+  id: string;
+  headerText: string;
+  contentText: string;
+};
 
+const DevExperience: DevExperienceType[] = [
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Languages & Frameworks",
+    contentText:
+      "TypeScript, JavaScript, React, Vue 2/3, Node.js, Next.js, C#, HTML, CSS",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Libraries & State Management",
+    contentText:
+      "React Query, Redux Toolkit, Apollo GraphQL, Axios, Vuex, Knockout",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Testing Tools",
+    contentText: "Jest, React Testing Library, Cypress, GitHub Actions",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Styling & Layout",
+    contentText:
+      "Styled Components, Tailwind CSS, Bootstrap, SCSS, Flexbox, Grid, CSS Modules",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Developer Tools",
+    contentText:
+      "GitHub, VS Code, Storybook, Postman, Jira, Notion, GitHub Copilot, ChatGPT",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Accessibility & DX Contributions",
+    contentText:
+      "Custom a11y npm packages, internal documentation hubs, platform strategy for 30+ teams",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Product & Team Collaboration",
+    contentText:
+      "Scrum ceremonies, mentorship, roadmap planning, stakeholder alignment",
+  },
+  {
+    id: cryptoRandomString({ length: 10 }),
+    headerText: "Tech Industry Focus Areas",
+    contentText:
+      "SaaS (B2B/B2C), Ecommerce, CRM, Developer Tools, Accessibility, AI-assisted workflows",
+  },
+];
+
+const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
   return (
     <DevExperienceSection aria-label="Development Experience Section">
       <PageHeader
-        headerText="myspace top 8 list"
-        subheaderText="with my professional experience"
+        headerText="MySpace Top 8"
+        isCenterAlignment={false}
+        isHero={false}
       />
       <DevExpertiseCard isNarrow={isNarrow}>
         {DevExperience.map((experience) => (

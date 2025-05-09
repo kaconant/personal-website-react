@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { H2, P1 } from "../../Typography";
+import { H3, P1 } from "../../Typography";
 
 type DevExpertiseProps = {
   isNarrow: boolean;
@@ -8,12 +8,13 @@ type DevExpertiseProps = {
 export const DevExperienceSection = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
 `;
 
 export const DevExpertiseCard = styled.div<DevExpertiseProps>`
   display: grid;
-  grid-template-columns: ${({ isNarrow }) => (isNarrow ? "1fr" : "1fr 1fr")};
+  grid-template-columns: ${({ isNarrow }) =>
+    isNarrow ? "1fr" : "1fr 1fr 1fr 1fr"};
   gap: 24px;
   text-align: center;
 `;
@@ -23,12 +24,12 @@ export const Section = styled.div`
   flex-direction: column;
   gap: 16px;
   padding: 12px;
-  background-color: var(--grayscale2);
-  border: 3px solid var(--grayscale4);
+  background-color: var(--white);
+  border: 2px solid var(--grayscale4);
   border-radius: var(--standardBorderRadius);
 `;
 
-export const SectionHeader = styled(H2)`
+export const SectionHeader = styled(H3)`
   color: var(--darkPurple);
 
   @media only screen and (max-width: 768px) {
@@ -39,5 +40,5 @@ export const SectionHeader = styled(H2)`
 `;
 
 export const SectionContent = styled(P1)`
-  color: var(--black);
+  margin-bottom: 8px;
 `;

@@ -4,7 +4,6 @@ export const H1 = styled.h1`
   font-size: 44px;
   line-height: 50px;
   font-family: "Yeseva One", cursive;
-  opacity: 70%;
   font-weight: 500;
 `;
 
@@ -12,14 +11,13 @@ export const H2 = styled.h2`
   font-size: 26px;
   line-height: 36px;
   font-family: "Yeseva One", cursive;
-  opacity: 80%;
   font-weight: 500;
 `;
 
 export const H3 = styled.h3`
   font-size: 20px;
-  line-height: 40px;
-  font-weight: 500;
+  line-height: 30px;
+  font-weight: 600;
 `;
 
 export const H3Bold = styled(H3)`

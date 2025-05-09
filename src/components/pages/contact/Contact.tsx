@@ -2,7 +2,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 
 import Tallulah from "@/assets/photos/self/Tallulah.jpg";
 
-import PageHeader from "@/components/atoms/PageHeader";
+import PageHeader from "@/components/atoms/HeaderCard";
 import ContactContainer from "@/components/blocks/ContactContainer";
 
 import {
@@ -25,7 +25,7 @@ const Contact = () => {
         aria-label="Contact Information Section"
       >
         <ContactContainer isNarrow={isNarrow} />
-        <ContactImage src={Tallulah} alt="picture of krissy" />
+        <ContactImage src={Tallulah} alt="picture of tallulah" />
       </ContactContent>
     </ContactPageContainer>
   );

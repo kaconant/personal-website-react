@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.section`
+export const HomeContainer = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 48px;
   width: 100%;
   padding: 0;
-  max-width: 1200px;
   height: auto;
 `;

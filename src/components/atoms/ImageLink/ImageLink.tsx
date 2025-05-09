@@ -33,10 +33,10 @@ const ImageLink: FC<ImageLinkProps> = ({
         <Tooltip
           id={tooltip}
           place={tooltipPlacement}
-          border={"1px solid var(--midOrange)"}
           style={{
+            border: "1px solid var(--midOrange)",
             backgroundColor: "var(--lightOrange)",
-            color: "var(--black)",
+            color: "var(--textColor)",
           }}
         />
       )}

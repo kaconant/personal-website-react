@@ -8,15 +8,15 @@ type ProjectsContainerProps = {
 export const ProjectsContainerCard = styled.section<ProjectsContainerProps>`
   display: grid;
   grid-template-columns: ${({ isNarrow }) => (isNarrow ? "1fr" : "1fr 1fr")};
-  gap: 24px;
+  gap: 48px;
 `;
 
 export const ProjectCard = styled.div<ProjectsContainerProps>`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: 3px solid var(--grayscale4);
   background: var(--white);
+  border: 2px solid var(--accentMauve);
   padding: 24px;
   border-radius: var(--standardBorderRadius);
 `;
@@ -42,10 +42,11 @@ export const ProjectHeader = styled(H2)`
 export const ProjectImage = styled.img`
   aspect-ratio: auto 1 / 1;
   height: auto;
-  width: 100%;
+  width: 80%;
   background: var(--shell);
   border: 1px solid var(--white);
   border-radius: var(--standardBorderRadius);
+  align-self: center;
 `;
 
 export const ProjectLine = styled.div`

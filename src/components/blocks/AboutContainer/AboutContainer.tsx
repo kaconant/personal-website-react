@@ -19,21 +19,21 @@ const AboutContainer: FC<AboutContainerProps> = ({ isNarrow }) => {
   const AboutInformation = [
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "beginnings",
+      headerText: "past",
       contentText:
-        "My interest in web development started during the wild west days of MySpace with a strong, pre-teen desire to implement the coolest cursor effects you could hack together. Over time, I realized the lack of women in STEM and decided it was time to bring my skills and unique perspective to the table.",
+        "My interest in web development started in the MySpace days, driven by a pre-teen desire to hack together custom cursors and layouts. Over time, I became aware of the lack of women in tech and felt called to bring my skills and perspective to the table.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
-      headerText: "the future",
+      headerText: "future",
       contentText:
-        "Foremost, I strive to build and deliver great user experiences by developing efficient and delightful frontend features for end users and design systems for fellow developers. Because of my varied background in the tech industry, I focus on working cross-functionally with other departments to identify opportunities to reduce churn and increase revenue. I greatly enjoy mentoring fellow engineers, designers and product managers as well as learning new technologies and methodlogies.",
+        "As a Senior Frontend Engineer, I love the mix of strategy, problem-solving, and empathy it takes to build features that actually make life better for users. I'm passionate about shaping roadmaps, refining design systems, and smoothing out the little pain points in both customer journeys and developer workflows. I work best cross-functionally, where I can connect dots, reduce churn, and help teams build things that truly matter.",
     },
     {
       id: cryptoRandomString({ length: 10 }),
       headerText: "...cat?",
       contentText:
-        "I have a lovely, chonky cat named Tallulah who has an adventurer's spirit while simultaneously suffering from agoraphobia.",
+        "I have a lovely, chonky cat named Tallulah who is equal parts bold adventurer and nervous homebody.",
     },
   ];
 

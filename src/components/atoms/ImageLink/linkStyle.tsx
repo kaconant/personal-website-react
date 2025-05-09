@@ -50,7 +50,7 @@ const padding: ThemeAttribute = {
 
 const border: ThemeAttribute = {
   primary: "unset",
-  button: "3px solid var(--midAqua)",
+  button: "2px solid var(--midAqua)",
 };
 
 const fontFamily: ThemeAttribute = {
