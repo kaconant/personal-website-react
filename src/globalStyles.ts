@@ -42,7 +42,7 @@ export const rootDimensions = {
   desktopClosedSidebarWidth: "108px",
   mobileClosedSidebarWidth: "78px",
   desktopPaddingTopHeight: "40px",
-  mobilePaddingTopHeight: "100px",
+  mobilePaddingTopHeight: "121px",
   midZIndex: 5,
   topZIndex: 10,
   standardBorderRadius: "6px",

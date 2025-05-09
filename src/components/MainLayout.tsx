@@ -1,11 +1,7 @@
 import { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
-import {
-  PageComponent,
-  BackgroundSheet,
-  ScrollContainer,
-} from "./blocks/Sidebar/sidebarStyle";
+import { PageComponent, BackgroundSheet } from "./blocks/Sidebar/sidebarStyle";
 import DesktopSidebar from "./blocks/Sidebar/DesktopSidebar";
 import MobileSidebar from "./blocks/Sidebar/MobileSidebar";
 import SkipLink from "@/components/atoms/SkipLink";
@@ -28,11 +24,9 @@ const MainLayout = ({ children }: { children: JSX.Element }) => {
           setExtendSidebar={setExtendSidebar}
         />
       )}
-      <ScrollContainer isNarrow={isNarrow}>
-        <PageComponent id="main-content" tabIndex={-1} isNarrow={isNarrow}>
-          {children}
-        </PageComponent>
-      </ScrollContainer>
+      <PageComponent id="main-content" tabIndex={-1} isNarrow={isNarrow}>
+        {children}
+      </PageComponent>
       {extendSidebar && <BackgroundSheet />}
     </>
   );

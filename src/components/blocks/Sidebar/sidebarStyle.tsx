@@ -141,11 +141,3 @@ export const LinkContainer = styled.section`
   bottom: 0px;
   margin: 0;
 `;
-
-export const ScrollContainer = styled.div<MainLayoutProps>`
-  height: 100vh;
-  overflow-y: auto;
-  margin-left: ${({ isNarrow }) => (isNarrow ? "0" : "0")};
-  background-color: var(--secondaryColor);
-  padding-top: ${({ isNarrow }) => (isNarrow ? "0" : "0")};
-`;

@@ -27,8 +27,11 @@ export const HeaderContainer = styled.header<HeaderCardProps>`
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
+    display: flex;
     gap: 8px;
     height: ${({ isHero }) => (isHero ? "250px" : "130px")};
+    text-align: center;
+    align-items: center;
   }
 `;
 
