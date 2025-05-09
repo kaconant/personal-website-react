@@ -11,7 +11,7 @@ import {
   LinkContainer,
 } from "./sidebarStyle";
 import HamburgerMenu from "@/assets/icons/HamburgerMenu.svg";
-import Resume from "@/assets/pdf/KrissyConantResume2023.pdf";
+import Resume from "@/assets/pdf/KrissyConant-Resume-2025.pdf";
 import LinkedIn from "@/assets/icons/linkedin.svg";
 import GitHub from "@/assets/icons/github.svg";
 import Email from "@/assets/icons/email.svg";
