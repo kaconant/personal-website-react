@@ -7,7 +7,7 @@ import {
 import cryptoRandomString from "crypto-random-string";
 
 import Link from "@/components/atoms/Link";
-import Resume from "@/assets/pdf/src/assets/pdf/KrissyConant-Resume-2025.pdf";
+import Resume from "@/assets/pdf/KrissyConant-Resume-2025.pdf";
 import ImageLink from "@/components/atoms/ImageLink";
 
 import LinkedIn from "@/assets/icons/linkedin.svg";
