@@ -10,17 +10,17 @@ type ThemeAttribute = Record<theme, string>;
 
 const backgroundColors: ThemeAttribute = {
   primary: "transparent",
-  button: "var(--lightBlue)",
+  button: "transparent",
 };
 
 const textColors: ThemeAttribute = {
-  primary: "var(--darkPurple)",
-  button: "var(--black)",
+  primary: "var(--textColor)",
+  button: "var(--textColor)",
 };
 
 const hoverTextColors: ThemeAttribute = {
   primary: "var(--black)",
-  button: "unset",
+  button: "var(--accentRaspberry)",
 };
 
 const fontSize: ThemeAttribute = {
@@ -50,12 +50,12 @@ const padding: ThemeAttribute = {
 
 const border: ThemeAttribute = {
   primary: "unset",
-  button: "3px solid var(--grayscale4)",
+  button: "3px solid var(--textColor)",
 };
 
 const hoverBorderColors: ThemeAttribute = {
   primary: "unset",
-  button: "var(--grayscale6)",
+  button: "3px solid var(--accentRose)",
 };
 
 const fontFamily: ThemeAttribute = {

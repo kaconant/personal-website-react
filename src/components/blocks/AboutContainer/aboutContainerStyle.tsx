@@ -10,8 +10,7 @@ export const AboutCard = styled.section<AboutCardProps>`
   flex-direction: ${({ isNarrow }) => (isNarrow ? "column" : "row")};
   gap: 48px;
   padding: 20px;
-  background: var(--primaryColor);
-  border: 2px solid var(--accentGreen);
+  background-color: var(--secondaryColor);
   border-radius: var(--standardBorderRadius);
   width: ${({ isNarrow }) => (isNarrow ? "100%" : "80%")};
   align-items: center;
@@ -24,7 +23,7 @@ export const AboutImage = styled.img<AboutCardProps>`
   max-height: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
   width: auto;
   max-width: ${({ isNarrow }) => (isNarrow ? "400px" : "450px")};
-  border: 2px solid var(--accentGreen);
+  border: 2px solid var(--secondaryColor);
   border-radius: var(--standardBorderRadius);
 `;
 

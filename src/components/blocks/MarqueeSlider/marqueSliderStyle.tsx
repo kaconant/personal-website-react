@@ -9,6 +9,7 @@ export const MarqueeContainer = styled.div<MarqueeSliderProps>`
   display: flex;
   gap: 32px;
   cursor: pointer;
+  color: var(--accentTextPurple);
 `;
 
 export const MarqueeFocusPoint = styled(H3)`

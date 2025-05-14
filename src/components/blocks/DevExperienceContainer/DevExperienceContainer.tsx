@@ -73,11 +73,7 @@ const DevExperience: DevExperienceType[] = [
 const DevExperienceContainer: FC<DevExperienceProps> = ({ isNarrow }) => {
   return (
     <DevExperienceSection aria-label="Development Experience Section">
-      <PageHeader
-        headerText="MySpace Top 8"
-        isCenterAlignment={false}
-        isHero={false}
-      />
+      <PageHeader headerText="MySpace Top 8" isHero={false} />
       <DevExpertiseCard isNarrow={isNarrow}>
         {DevExperience.map((experience) => (
           <Section key={experience.id}>

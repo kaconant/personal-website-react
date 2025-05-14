@@ -20,17 +20,39 @@ export const DevExpertiseCard = styled.div<DevExpertiseProps>`
 `;
 
 export const Section = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  position: relative;
   padding: 12px;
-  background-color: var(--white);
-  border: 2px solid var(--grayscale4);
   border-radius: var(--standardBorderRadius);
-`;
+  background-color: var(--secondaryColor);
+  z-index: 1;
 
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px; /* Thickness of the "border" */
+    border-radius: var(--standardBorderRadius);
+    background: repeating-linear-gradient(
+      to right,
+      #ffb3f3,
+      #ffc6ec,
+      #c9b6ff,
+      #b3e5ff,
+      #d1ffd6,
+      #fff7b3,
+      #ffb3f3
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+`;
 export const SectionHeader = styled(H3)`
   color: var(--darkPurple);
+  padding-bottom: 8px;
 
   @media only screen and (max-width: 768px) {
     font-size: 20px;
@@ -40,5 +62,6 @@ export const SectionHeader = styled(H3)`
 `;
 
 export const SectionContent = styled(P1)`
-  margin-bottom: 8px;
+  padding: 8px 0;
+  border-top: 2px solid var(--accentRose);
 `;

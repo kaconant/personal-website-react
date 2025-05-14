@@ -26,6 +26,6 @@ export const ContactImage = styled.img`
   max-height: 340px;
   width: auto;
   max-width: 340px;
-  border: 2px solid var(--white);
+  border: 2px solid var(--shell);
   border-radius: var(--standardBorderRadius);
 `;

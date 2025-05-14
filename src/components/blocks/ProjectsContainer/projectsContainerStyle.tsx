@@ -16,7 +16,7 @@ export const ProjectCard = styled.div<ProjectsContainerProps>`
   flex-direction: column;
   gap: 24px;
   background: var(--white);
-  border: 2px solid var(--accentMauve);
+  border: 2px solid var(--white);
   padding: 24px;
   border-radius: var(--standardBorderRadius);
 `;

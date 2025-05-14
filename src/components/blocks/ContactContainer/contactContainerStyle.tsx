@@ -11,7 +11,7 @@ export const ContactCard = styled.section<ContactCardProps>`
   gap: 48px;
   padding: 24px;
   background: var(--white);
-  border: 2px solid var(--accentGreen);
+  border: 2px solid var(--shell);
   border-radius: var(--standardBorderRadius);
   align-self: center;
   align-items: center;

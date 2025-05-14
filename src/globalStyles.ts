@@ -2,40 +2,38 @@ import { createGlobalStyle } from "styled-components";
 
 export const brandColors = {
   // Backgrounds (60%)
-  primaryColor: "#e6f9f8", // light mint green – primary background
-  secondaryColor: "#fff4f6", // blush pink – secondary background
+  primaryColor: "#fff7b3", // soft yellow – playful and light
+  secondaryColor: "#fffcfd", // near-white blush – clean and bright
 
   // Accessible Text + Accent Colors (30% + 10%)
-  accentPink: "#f7c5cc", // warm blush – buttons, links
-  accentGreen: "#7cb0a4", // turquoise green – borders, icons, focus ring
-  accentMauve: "#a07f8d", // dusty mauve – subheadings, cards
-  accentLightMauve: "#e2d5d8", // soft mauve – lighter UI elements
-  accentPurple: "#c2b2e7", // lavender – soft accents
-  accentDarkPurple: "#7a6999", // deep lavender – headings, CTA buttons
-  accentRose: "#db7697", // bold rose – use sparingly for pop
+  accentPink: "#ffb3f3", // cotton candy pink – links, buttons
+  accentLavender: "#c9b6ff", // pastel lavender – secondary headings, icons
+  accentRose: "#ffb3f3", // saturated pink – used sparingly for pop
+  accentTextPurple: "#6b4c85", // readable purple for contrast elements
+  accentRaspberry: "#cc2e70", // raspberry pink – used for emphasis
 
   // Primary body text color for accessibility
-  textColor: "#403b3d", // rich neutral – readable on pastels
+  textColor: "#3a2f33", // deep plum brown – strong contrast on pastels
 };
 
 export const accentColors = {
   // Utility + Neutral Palette
-  outline: "#6F6B85", // muted purple-gray – outline/focus
-  black: "#111827", // rich black
-  white: "#FFFFFF", // base white
+  outline: "#9e79af", // soft lilac-gray – outlines and focus rings
+  black: "#1c1c1c", // off-black for strong text
+  white: "#ffffff", // pure white
 
   // Soft neutrals for UI backgrounds or surfaces
-  sand: "#F4DECB", // warm sand – section background
-  shell: "#f7f2ef", // off-white – card or content surface
+  shell: "#fff9fb", // whisper pink – cards and content surfaces
+  cloud: "#fefaff", // dreamy off-white – hover or subtle sections
 
   // Grayscale for borders, dividers, subtle text
-  grayscale1: "#F9FAFB", // very light gray
-  grayscale2: "#F3F4F6",
-  grayscale3: "#E5E7EB",
-  grayscale4: "#D1D5DB",
-  grayscale5: "#9CA3AF",
-  grayscale6: "#6B7280", // muted label text
-  grayscale7: "#4B5563", // secondary text
+  grayscale1: "#fdfdfe", // near-white gray
+  grayscale2: "#f2f2f5",
+  grayscale3: "#e2e2e8",
+  grayscale4: "#cfcfe0",
+  grayscale5: "#b2b2c8",
+  grayscale6: "#8f8fa3", // muted labels
+  grayscale7: "#6b6b80", // secondary text
 };
 
 export const rootDimensions = {
@@ -57,12 +55,11 @@ const GlobalStyle = createGlobalStyle`
 
     /* Accents */
     --accentPink: ${brandColors.accentPink};
-    --accentGreen: ${brandColors.accentGreen};
-    --accentMauve: ${brandColors.accentMauve};
-    --accentLightMauve: ${brandColors.accentLightMauve};
-    --accentPurple: ${brandColors.accentPurple};
-    --accentDarkPurple: ${brandColors.accentDarkPurple};
+    --accentLavender: ${brandColors.accentLavender};
     --accentRose: ${brandColors.accentRose};
+    --accentTextPurple: ${brandColors.accentTextPurple};
+        --accentTextPurple: ${brandColors.accentTextPurple};
+    --accentRaspberry: ${brandColors.accentRaspberry};
 
     /* Utility Colors */
     --textColor: ${brandColors.textColor};
@@ -71,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
     --white: ${accentColors.white};
 
     /* Neutrals */
-    --sand: ${accentColors.sand};
+    --sand: ${accentColors.cloud};
     --shell: ${accentColors.shell};
 
     /* Grayscale */

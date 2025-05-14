@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
-import { PageComponent, BackgroundSheet } from "./blocks/Sidebar/sidebarStyle";
+import { PageComponent, BackgroundSheet } from "./pages/pageStyle";
 import DesktopSidebar from "./blocks/Sidebar/DesktopSidebar";
 import MobileSidebar from "./blocks/Sidebar/MobileSidebar";
 import SkipLink from "@/components/atoms/SkipLink";

@@ -34,9 +34,10 @@ const ImageLink: FC<ImageLinkProps> = ({
           id={tooltip}
           place={tooltipPlacement}
           style={{
-            border: "1px solid var(--midOrange)",
-            backgroundColor: "var(--lightOrange)",
+            border: "1px solid var(--accentLavender)",
+            backgroundColor: "var(--accentLavender)",
             color: "var(--textColor)",
+            fontWeight: 800,
           }}
         />
       )}
